@@ -981,8 +981,8 @@ result <span class="token operator">=</span> prefix <span class="token operator"
   
   <entry>
     <title>失踪人口回归系列之增强站点SSL安全性</title>
-    <link href="https://blog.halyul.com/posts/imporve-ssl/"/>
-    <id>https://blog.halyul.com/posts/imporve-ssl/</id>
+    <link href="https://blog.halyul.com/posts/imporve-ssl%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/imporve-ssl (copy)/</id>
     <published>2017-03-22T11:39:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     
@@ -1173,8 +1173,8 @@ $ openssl dhparam -out dhparam.pem 4096
   
   <entry>
     <title>失踪人口回归系列之增强站点SSL安全性</title>
-    <link href="https://blog.halyul.com/posts/imporve-ssl%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/imporve-ssl (copy)/</id>
+    <link href="https://blog.halyul.com/posts/imporve-ssl/"/>
+    <id>https://blog.halyul.com/posts/imporve-ssl/</id>
     <published>2017-03-22T11:39:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     
@@ -1843,10 +1843,10 @@ $ <span class="token function">chown</span> -hR git:git /path/to/your/site
   
   <entry>
     <title>为Hexo的Material主题添加总图库以及分图库功能</title>
-    <link href="https://blog.halyul.com/posts/add-gallery%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/add-gallery (copy)/</id>
+    <link href="https://blog.halyul.com/posts/add-gallery/"/>
+    <id>https://blog.halyul.com/posts/add-gallery/</id>
     <published>2016-12-30T09:33:13.000Z</published>
-    <updated>2016-12-30T12:11:36.000Z</updated>
+    <updated>2016-12-30T12:11:35.000Z</updated>
     
     <content type="html"><![CDATA[<p>嗯现在博客换了主题这个用不上了惹。<br><a id="more"></a></p>
 <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>今天将整个[Material主题][1]研究了一遍，发现了这个主题自带图库，然而这个图库只能支持一个相册，想将相册分类是不可能的，故而稍加研究，自己添加了这个功能。</p>
@@ -1940,10 +1940,10 @@ date: 2016/12/30
   
   <entry>
     <title>为Hexo的Material主题添加总图库以及分图库功能</title>
-    <link href="https://blog.halyul.com/posts/add-gallery/"/>
-    <id>https://blog.halyul.com/posts/add-gallery/</id>
+    <link href="https://blog.halyul.com/posts/add-gallery%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/add-gallery (copy)/</id>
     <published>2016-12-30T09:33:13.000Z</published>
-    <updated>2016-12-30T12:11:35.000Z</updated>
+    <updated>2016-12-30T12:11:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>嗯现在博客换了主题这个用不上了惹。<br><a id="more"></a></p>
 <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>今天将整个[Material主题][1]研究了一遍，发现了这个主题自带图库，然而这个图库只能支持一个相册，想将相册分类是不可能的，故而稍加研究，自己添加了这个功能。</p>

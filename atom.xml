@@ -57,8 +57,8 @@
   
   <entry>
     <title>table</title>
-    <link href="https://blog.halyul.com/posts/table%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/table (copy)/</id>
+    <link href="https://blog.halyul.com/posts/table/"/>
+    <id>https://blog.halyul.com/posts/table/</id>
     <published>2017-09-01T15:00:00.000Z</published>
     <updated>2017-12-13T04:55:42.000Z</updated>
     
@@ -104,8 +104,8 @@
   
   <entry>
     <title>table</title>
-    <link href="https://blog.halyul.com/posts/table/"/>
-    <id>https://blog.halyul.com/posts/table/</id>
+    <link href="https://blog.halyul.com/posts/table%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/table (copy)/</id>
     <published>2017-09-01T15:00:00.000Z</published>
     <updated>2017-12-13T04:55:42.000Z</updated>
     
@@ -191,8 +191,8 @@
   
   <entry>
     <title>hexo-theme-mdui document English version</title>
-    <link href="https://blog.halyul.com/posts/mdui-doc-en%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/mdui-doc-en (copy)/</id>
+    <link href="https://blog.halyul.com/posts/mdui-doc-en/"/>
+    <id>https://blog.halyul.com/posts/mdui-doc-en/</id>
     <published>2017-03-23T12:01:00.000Z</published>
     <updated>2017-05-06T05:25:00.000Z</updated>
     
@@ -541,8 +541,8 @@ result <span class="token operator">=</span> prefix <span class="token operator"
   
   <entry>
     <title>hexo-theme-mdui document English version</title>
-    <link href="https://blog.halyul.com/posts/mdui-doc-en/"/>
-    <id>https://blog.halyul.com/posts/mdui-doc-en/</id>
+    <link href="https://blog.halyul.com/posts/mdui-doc-en%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/mdui-doc-en (copy)/</id>
     <published>2017-03-23T12:01:00.000Z</published>
     <updated>2017-05-06T05:25:00.000Z</updated>
     

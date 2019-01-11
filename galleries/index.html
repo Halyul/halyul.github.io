@@ -1,0 +1,745 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.0.2",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>TEST GALLERY 1 - Halyul的博客</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="Halyul">
+  
+      <meta name="description" content="Never do a dreamer.">
+  
+  <meta name="keywords" content="blog, hexo, mdui">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="TEST GALLERY 1 - Halyul的博客 | Halyul的博客">
+  <meta property="og:image" content="/images/favicon.png">
+  
+    <meta property="og:description" content="Never do a dreamer.">
+  
+
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        Halyul
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        I&#39;m your slogan!
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+      <div class="mdui-list-item-content">归档</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
+            <div class="mdui-list-item-content">分类</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                杂
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+              </a>
+            
+              <a href="/categories/wx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                wx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Document
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">标签</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+              </a>
+            
+              <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                教程
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/wx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                wx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">年份</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+            <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
+              2018
+            </a>
+          
+            <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+              2017
+            </a>
+          
+            <a href="/archives/2016/" class="mdui-list-item mdui-ripple">
+              2016
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+      
+        
+          
+            <a href="/friends" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
+              
+              
+              <div class="mdui-list-item-content">Test1</div>
+            </a>
+        
+      
+        
+          
+            <a href="/apply-for-link" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
+              
+              
+              
+              <div class="mdui-list-item-content">Test2</div>
+            </a>
+        
+      
+        
+          
+            <a href="/galleries" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test3</div>
+            </a>
+        
+      
+        
+          <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test4</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              
+                
+                  <a href="/myfriends" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST1
+                  </a>
+              
+                
+                  <a href="/timeline" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST2
+                  </a>
+              
+            </div>
+          </div>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br>
+    <span>
+      Copyright ©
+      <span year=""></span>
+      Halyul
+    </span>
+    
+    
+      <br>
+      <span>
+        最后更新于: 1月 12, 2019
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="galleries">
+        
+  <div class="theme-galleries">
+  <div class="mdui-container-fluid">
+    <div class="theme-galleries__container">
+      <div class="mdui-row">
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="/galleries/ca.html" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADzUExURUxpcT5DQ/vPz9vd3f++vv+srPr6+vv8/EBBQf////7///v9/f/T0/z//8LHx4CCgvz5+e709P/////+/v+1tdne3v////Tg4P///8fR0fX6+o6Ojv/5+f3r6//////5+f27u/7Hx////////6Wlpers7Ozt7fPz8+rq6jg4OPT09Pzb2//7+////7u+vvvz8/8zM/////8AAP8wMP/w8P/09P9fX/9YWP8uLv8ODv8XF//9/f/y8v83N/8mJv8gIP+Jif86Ov/Kyv/r6/9GRv8ICP+/v/98fP+Skv+Xl//4+P/Z2f9SUv+jo/9lZf9vb/8/P8FcuGYAAAAwdFJOUwAE75Ty/eUMC/U+FuMlXi2ZN0i6/oEE1XopXj6qzU6y9+9EgkKVndi7FtrdoW4P8WU/2bkAAAJdSURBVDjLfdUJc6IwFABgDhHEA896rNaj7fbazqTgQYKcIopX+/9/zQYQBBHfjCOZfPNCnsmTIJLBlvn642OdL7PEnWD5p0a+4Ee+8cRnWbbXKHzHotDo3aIPk2GCBXTykErXoYzpNVwa485V0mKV0cAqBU2dqRYTrr+F8JDKOFsguB3GJFvdQiQv0nAuY1m9rP7VRAhIt6AEEGQ6oauVJChlQYC0En9euP+zlkEmlNenYbB4PYd0kA2BjkaPfqX/zaGUgKtVAkpw0ffqXi7pXsILVAxDiUOcclzztux6bxhBxXJs27GUGJTX7heGeGUQz2iYAJhGPCPw1y4OVBRB5Xs6Y7xnZucNQojAoBi9ogeVo7sxHC+jY2zcoxJCDZXKRC0HtSjjUZbUE4bqXJVkN8qowdwEV3F9gYyKv/0B/jBxWCcmMbgzQCyMXQLipS+bWbpmMAUkc7uMygPXOZ4of+oiin6ZXdMOpN3cheWRoajjzbCDX1FE0aFQNqqNQ90oYR01KIomLg9R/RFFEe/8DC1r7zh7yzpDSV/j6VOVJIge4z2KSIsOxX4fHQodenPisYd/wu6n7A9EMzw0lhVert9gRit1MSRfNsFQTsGpGsxs/pL+TaC0JFSUJNSpmn/CyRcjCaM4QyNIiN+yfbgH7XY3vIYVSsqGGlWJ7jXZGstZUBu1uEur4Fo56TaURzQXbz5cizqkm9TUPFAtLtnOuEq7OUvd62a7wl03SFKg89cwTwvkjZ7LPdOvsaZbeKWfuYwuzgkV+u0jj+Pjja4I3L0/Bu5d+INDeL9W/wGVhuZVu52eMwAAAABJRU5ErkJggg==">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="/galleries/jp.html" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADkUExURUxpcf////////f39/////r6+v///////0RERPv7+/////7+/v7+/t/f3////////4aGhpKSkvr6+rq6uv39/f///97e3v////7+/sfHx9zc3F5eXu3t7dvb2/39/f////z8/Pf39/7+/v///////+Hh4erq6u7u7vPz88bGxuzs7P///8kzV////8kxVbwAK/77/MgsUc1AYvvu8cUjSr4HM9+CmdBLa/fh5vPP2M9IafTV3NNXdf3198s5XNpxi9JScfjl6umtvO/Ezu6+yfbc4uKPo8MYQfno7OSbrNRdethrhUWQpXIAAAAsdFJOUwBIB93+DOz5C+V3MiAdOdwyPe5BoLB39bhZmhgrifNejs5CrJWgkadVa8MTdZe9XAAAAfxJREFUOMuFlYlygjAURREEIlrFfatWq3abEhGQ1a22amv//38aNQkgwd4ZZ8Cc4b4b8h4cFxdfKGaQigWRuyE+r9RLUhNJKrWUYhorZkZSVgvVbz0w0fyoqV1Jbj0mXZWcxpCkXD1UHDQ1puTaXYwby1qKsvUIyQ9SOaRa6P4Q8dVN1/M+zEh8WaF5S/TP5Ze98FeGf7Q9PUyEs/M1Wk+wXkEI39EPGvaOkvWLeVEirlsfvhNBuPmk5i9ncEzut0bInVCfknUecQVSYeDHOERuXFJl/hQZB1yurzhE2iSREnH+XCVBI8CLI54ThzixneAQ+YPBUoGWaC5Y4K9Oi7zHp+bDYYEb87LazNBdDAwW6HxTMI/B3X/gbesFsX6kYZZHFrjGYXL3nNjCO7BngVu8KKDTO8DXXrJI6JB3WENv5gWfbp2x42S/sw0E3gn4znVm8dMzO+IopxKRnshh+rLmB8uanWVZh/nKIyvP4ARWK5SE0+l0fha6MCjXb1964Yl2krs+TLEs+1uLPxBVOQx7MNg7yBZu9ruwD4UqacN2RYv1q2vq0WHVoH0NGv30/pd7IBwVoJdKypNudPiARoXN9Xvd+DgD7WGWwQmvIDEh1U5iQlYmZdbIBdWOEJlWstCpgpQpDtR2503IIQlvk1cV3PowgK5aRlK719Qfk3/LUMwtkHwAAAAASUVORK5CYII=">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">日本之旅</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">我没有将照片备份 然后因为刷机的缘故原图全部丢失 这些都是从微信朋友圈备份下来的 大部分经过PS加持</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="https://img.halyul.com/album/AxS" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">日本之旅1</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">我没有将照片备份 然后因为刷机的缘故原图全部丢失 这些都是从微信朋友圈备份下来的 大部分经过PS加持</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学2</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学25</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学24</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="mdui-col-xs-6 mdui-col-md-3">
+            <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
+              <div class="mdui-grid-tile theme-galleries__container__tile">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
+                  <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
+                    
+                    <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学21</div>
+                    <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+      <div class="theme-end-footer">
+        <div class="mdui-text-center mdui-text-color-theme-text">
+          看起来已经没有了
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
+  <i class="mdui-icon material-icons">&#xe5d8;</i>
+</button>
+
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  (function() {
+    var fabTopFlag = false;
+    var fabEl = document.getElementById('index-fab');
+    function fabShowHide() {
+      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
+      if (bodyScrolled > 0 && !fabTopFlag) {
+        fabEl.classList.remove('mdui-fab-hide');
+        fabTopFlag = true;
+      } else if (bodyScrolled === 0 && fabTopFlag) {
+        fabEl.classList.add('mdui-fab-hide');
+        fabTopFlag = false;
+      }
+    }
+    fabShowHide()
+    window.addEventListener('scroll', fabShowHide);
+    var listener = {
+      function: fabShowHide,
+      event: 'scroll',
+      el: window,
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  })();
+</script>
+
+
+  
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>你的浏览器已经过气辣！</h6>
+    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+</body>
+</html>

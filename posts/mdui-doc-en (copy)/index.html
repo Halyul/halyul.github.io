@@ -1,0 +1,1295 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.0.2",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>hexo-theme-mdui document English version - Halyul的博客</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="Halyul">
+  
+      <meta name="description" content="This is hexo-theme-mdui document English version">
+  
+  <meta name="keywords" content="blog, hexo, mdui,Hexo">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="hexo-theme-mdui document English version - Halyul的博客 | Halyul的博客">
+  <meta property="og:image" content="/images/favicon.png">
+  
+    <meta property="og:description" content="This is hexo-theme-mdui document English version">
+  
+
+  
+    <meta property="og:article:tag" content="Hexo">
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        Halyul
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        I&#39;m your slogan!
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+      <div class="mdui-list-item-content">归档</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
+            <div class="mdui-list-item-content">分类</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                杂
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+              </a>
+            
+              <a href="/categories/wx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                wx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Document
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">标签</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+              </a>
+            
+              <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                教程
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/wx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                wx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">年份</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+            <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
+              2018
+            </a>
+          
+            <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+              2017
+            </a>
+          
+            <a href="/archives/2016/" class="mdui-list-item mdui-ripple">
+              2016
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+      
+        
+          
+            <a href="/friends" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
+              
+              
+              <div class="mdui-list-item-content">Test1</div>
+            </a>
+        
+      
+        
+          
+            <a href="/apply-for-link" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
+              
+              
+              
+              <div class="mdui-list-item-content">Test2</div>
+            </a>
+        
+      
+        
+          
+            <a href="/galleries" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test3</div>
+            </a>
+        
+      
+        
+          <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test4</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              
+                
+                  <a href="/myfriends" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST1
+                  </a>
+              
+                
+                  <a href="/timeline" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST2
+                  </a>
+              
+            </div>
+          </div>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br>
+    <span>
+      Copyright ©
+      <span year=""></span>
+      Halyul
+    </span>
+    
+    
+      <br>
+      <span>
+        最后更新于: 1月 12, 2019
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      hexo-theme-mdui document English version
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>编写时间：</span>
+        <span style="float: right">3月 23, 2017</span>
+        
+        <br>
+          <span>最后修改时间：</span>
+          <span>5月 06, 2017</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        文章二维码
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACY0lEQVR42u3aW27CMBQE0Ox/0+0CEDDjFwGdfCHaxD6pZLtz7/X309eFh4eHh4eHh4d3M94VX4931QOXzxycGx4eHt4RXjKt9qfPhn+8K/mcj46Hh4d3kvdswX32O6+/SSaUbxXJ3PDw8PDuz3szTAleNi4eHh7eLXnJFF8/7fU3eHh4eN/Caw/BMxHtTMyxMWvBw8PDi3ntsn7y89H6Hh4eHl7Amyn/5xtJ8pzkydEM8fDw8Dbz8oU4QY5NemxjwMPDw/ssL2+NauODtfHuYIyLh4eHt5TXlvDXhrntgTv6k+Dh4eFt5hVH1WBBz5f1tkEhP1jj4eHh7eaNxQHt4TvfMNrXh4eHh/cpXlu4yl/NVBNA8ELrMAIPDw9vmjezBCfBRNKIMHZwL/5jwMPDw1vKayfUgttYId8wotYBPDw8vCO8sThgDNOCo60FDw8P7yAvjyHaqKINgsdKaHh4eHhneGOLfj7dltSOPtgZgYeHhzfNS5b+vHzVTjp/uVFzGB4eHt5xXtss1YLbjWSq6QoPDw/vOC9pFJh5BcmTk8ACDw8P77O8PMBtj8JtCDIYB+Ph4eEd5OUDtEfhvNjWRhLFxoCHh4e3gTezxLfl/zbeHWy6wsPDw9vAa6+6BSrYMOaP9Xh4eHgneVd8zYPbVqr8Xjw8PLzzvJnNYD4Czo/OC2JcPDw8vA0FsLULev4S843qTayMh4eHd2NeNFgQT4yV2fDw8PC+lzdGzbeTdpvBw8PDO8mbaY1q2TNlMzw8PLw78BZEAGUpa0Gha0d9Dw8PDy/g/d6Fh4eHh4eHh4d3g+sfF+zYJP9qMscAAAAASUVORK5CYII=" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.halyul.com//posts/mdui-doc-en (copy)/index.html" target="_blank" class="mdui-ripple">
+                分享到Facebook
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=https://blog.halyul.com//posts/mdui-doc-en (copy)/index.html" target="_blank" class="mdui-ripple">
+                分享到Google+
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.halyul.com//posts/mdui-doc-en (copy)/index.html&title=hexo-theme-mdui document English version" target="_blank" class="mdui-ripple">
+                分享到Linkedin
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=hexo-theme-mdui document English version&url=https://blog.halyul.com//posts/mdui-doc-en (copy)/index.html&via=Halyul" target="_blank" class="mdui-ripple">
+                分享到Twitter
+            </a>
+        </li>
+      
+
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/33.png">
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p>This is hexo-theme-mdui document English version<br><a id="more"></a></p>
+<p>您可以在<a href="https://blog.halyul.cc/2017/03/23/mdui-doc-cn/" target="_blank" rel="noopener">这里</a>找到中文版本.</p>
+<p>I write this theme for my personal use, but if you want to use it too, please clone my theme and follow this document to properly configure it.</p>
+<p>This document follows the <code>_config.yml</code> configurations order. If the doc doesn’t mention some configurations, just ignore them, I will remove them in later development.</p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><h4 id="Install-the-theme"><a href="#Install-the-theme" class="headerlink" title="Install the theme"></a>Install the theme</h4><p>You need following things：</p>
+<ul>
+<li>a hexo</li>
+<li>my theme</li>
+</ul>
+<p>The theme just supports <code>git clone</code>, <code>npm install</code> will be supported later (or not supported).</p>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/Halyul/hexo-theme-mdui.git
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Once you have finished clone, copy the folder to hexo <code>theme</code> foler , and rename to <code>mdui</code></p>
+<blockquote>
+<p>The folder name can be changed to whatever you want, but needs to match the name below.</p>
+</blockquote>
+<h4 id="Enable-the-theme"><a href="#Enable-the-theme" class="headerlink" title="Enable the theme"></a>Enable the theme</h4><p>Then open hexo’s <code>_config.yml</code>, find <code>theme</code> and change to folloing name to <code>mdui</code>(or the one you have set just now.)</p>
+<p><strong>Then run the following code to install <code>prismjs</code> in the <code>hexo</code> folder to prevent from getting errors when you run hexo</strong></p>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> prismjs --save
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Run <code>hexo s --debug</code> in terminal, open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> to make sure the site is running without any problems.</p>
+<h3 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h3><h4 id="location"><a href="#location" class="headerlink" title="location"></a>location</h4><ul>
+<li>location: For Mathjax. available option is <code>cn</code>, for the users in China Mainland to access a better cdn service. For users who are not in China Mainland, the theme uses <code>Cloudflare</code> cdn service.</li>
+</ul>
+<h4 id="style"><a href="#style" class="headerlink" title="style"></a>style</h4><ul>
+<li>bg_img: parallax image in <code>archive page</code></li>
+<li>avatar: author’s avatar</li>
+<li>slogan: author’s slogan/description</li>
+<li>hoverable: all the cards can hover or not</li>
+</ul>
+<h4 id="HTML-Head"><a href="#HTML-Head" class="headerlink" title="HTML Head"></a>HTML Head</h4><p>Here you can set HTML head information.</p>
+<ul>
+<li>favicon</li>
+<li>high_res_favicon: high resolution favicon</li>
+<li>high_res_favicon: iOS luncher icon</li>
+<li>keywords: website keywords.</li>
+</ul>
+<h4 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h4><p>Setting up the theme color.</p>
+<ul>
+<li>primary_color: <a href="(#Primary-colors">Primary color</a></li>
+<li>accent_color: <a href="#Accent-colors">Accent color</a></li>
+<li>layout: <a href="#Layout">Layout</a></li>
+<li><p>random: random color, available options are <code>global</code> (global site random color, namely every time you generate or deploy you blog, every pages’ color in the blog will change to another.) and <code>post</code>(only the post color will change)</p>
+<blockquote>
+<p>If you define a color in post’s <code>fort-matter</code>, the defined color takes precedence over the random color.<br>for some reasons, when the option is <code>post</code>, the custom pages’ color would change.</p>
+</blockquote>
+</li>
+<li><p>bg_color: Global background color (needs to be set as HEX format)</p>
+</li>
+</ul>
+<p><strong>For now, the Android Chrome status bar color changing does’t support the color with color scale.<br>For some reasons again (lol), please change the space to <code>-</code> when you use the color.<br>eg. <code>deep purple</code> -&gt; <code>deep-purple</code></strong></p>
+<h5 id="Primary-colors"><a href="#Primary-colors" class="headerlink" title="Primary colors"></a>Primary colors</h5><p><img src="https://img.shields.io/badge/primary_color-red-%23F44336.svg?style=flat-square&amp;colorB=F44336" alt="red"> <img src="https://img.shields.io/badge/primary_color-pink-%23E91E63.svg?style=flat-square&amp;colorB=E91E63" alt="pink"> <img src="https://img.shields.io/badge/primary_color-purple-%239C27B0.svg?style=flat-square&amp;colorB=9C27B0" alt="purple"> <img src="https://img.shields.io/badge/primary_color-deep_purple-%23673AB7.svg?style=flat-square&amp;colorB=673AB7" alt="deep-purple"> <img src="https://img.shields.io/badge/primary_color-indigo-%233F51B5.svg?style=flat-square&amp;colorB=3F51B5" alt="indigo"> <img src="https://img.shields.io/badge/primary_color-blue-%232196F3.svg?style=flat-square&amp;colorB=2196F3" alt="blue"> <img src="https://img.shields.io/badge/primary_color-light_blue-%2303A9F4.svg?style=flat-square&amp;colorB=03A9F4" alt="light-blue"> <img src="https://img.shields.io/badge/primary_color-cyan-%2300BCD4.svg?style=flat-square&amp;colorB=00BCD4" alt="cyan"> <img src="https://img.shields.io/badge/primary_color-teal-%23009688.svg?style=flat-square&amp;colorB=009688" alt="teal"> <img src="https://img.shields.io/badge/primary_color-green-%234CAF50.svg?style=flat-square&amp;colorB=4CAF50" alt="green"> <img src="https://img.shields.io/badge/primary_color-light_green-%238BC34A.svg?style=flat-square&amp;colorB=8BC34A" alt="light-green"> <img src="https://img.shields.io/badge/primary_color-lime-%23CDDC39.svg?style=flat-square&amp;colorB=CDDC39" alt="lime"> <img src="https://img.shields.io/badge/primary_color-yellow-%23FFEB3B.svg?style=flat-square&amp;colorB=FFEB3B" alt="yellow"> <img src="https://img.shields.io/badge/primary_color-amber-%23FFC107.svg?style=flat-square&amp;colorB=FFC107" alt="amber"> <img src="https://img.shields.io/badge/primary_color-orange-%23FF9800.svg?style=flat-square&amp;colorB=FF9800" alt="orange"> <img src="https://img.shields.io/badge/primary_color-deep_orange-%23FF5722.svg?style=flat-square&amp;colorB=FF5722" alt="deep-orange"> <img src="https://img.shields.io/badge/primary_color-brown-%23795548.svg?style=flat-square&amp;colorB=795548" alt="brown"> <img src="https://img.shields.io/badge/primary_color-grey-%239E9E9E.svg?style=flat-square&amp;colorB=9E9E9E" alt="grey"></p>
+<h5 id="Accent-colors"><a href="#Accent-colors" class="headerlink" title="Accent colors"></a>Accent colors</h5><p><img src="https://img.shields.io/badge/accent_color-red-%23FF5252.svg?style=flat-square&amp;colorB=FF5252" alt="red"> <img src="https://img.shields.io/badge/accent_color-pink-%23FF4081.svg?style=flat-square&amp;colorB=FF4081" alt="pink"> <img src="https://img.shields.io/badge/accent_color-purple-%23E040FB.svg?style=flat-square&amp;colorB=E040FB" alt="purple"> <img src="https://img.shields.io/badge/accent_color-deep_purple-%237C4DFF.svg?style=flat-square&amp;colorB=7C4DFF" alt="deep-purple"> <img src="https://img.shields.io/badge/accent_color-indigo-%23536DFE.svg?style=flat-square&amp;colorB=536DFE" alt="indigo"> <img src="https://img.shields.io/badge/accent_color-blue-%23448AFF.svg?style=flat-square&amp;colorB=448AFF" alt="blue"> <img src="https://img.shields.io/badge/accent_color-light_blue-%2340C4FF.svg?style=flat-square&amp;colorB=40C4FF" alt="light-blue"> <img src="https://img.shields.io/badge/accent_color-cyan-%2318FFFF.svg?style=flat-square&amp;colorB=18FFFF" alt="cyan"> <img src="https://img.shields.io/badge/accent_color-teal-%2364FFDA.svg?style=flat-square&amp;colorB=64FFDA" alt="teal"> <img src="https://img.shields.io/badge/accent_color-green-%2369F0AE.svg?style=flat-square&amp;colorB=69F0AE" alt="green"> <img src="https://img.shields.io/badge/accent_color-light_green-%23B2FF59.svg?style=flat-square&amp;colorB=B2FF59" alt="light-green"> <img src="https://img.shields.io/badge/accent_color-lime-%23EEFF41.svg?style=flat-square&amp;colorB=EEFF41" alt="lime"> <img src="https://img.shields.io/badge/accent_color-yellow-%23FFFF00.svg?style=flat-square&amp;colorB=FFFF00" alt="yellow"> <img src="https://img.shields.io/badge/accent_color-amber-%23FFD740.svg?style=flat-square&amp;colorB=FFD740" alt="amber"> <img src="https://img.shields.io/badge/accent_color-orange-%23FFAB40.svg?style=flat-square&amp;colorB=FFAB40" alt="orange"> <img src="https://img.shields.io/badge/accent_color-deep_orange-%23FF6E40.svg?style=flat-square&amp;colorB=FF6E40" alt="deep-orange"></p>
+<h5 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h5><p>The theme has two <code>layouts</code>, the default layout is <code>white</code>, you change use the <code>dark</code> layout.</p>
+<ul>
+<li>layout: “dark”</li>
+</ul>
+<h4 id="appbar"><a href="#appbar" class="headerlink" title="appbar"></a>appbar</h4><ul>
+<li>title: This is the default title in the appbar, it will always show, and will not change or hide, you can leave it blank<blockquote>
+<p>Personally, I’m not recommend you leaving it blank, because it provides a go-to-index-page function.<br>you can find a <code>back</code> button in the appbar when you visit some page, this button just provides a return function, which is the as the browser provided.</p>
+</blockquote>
+</li>
+</ul>
+<p>Also, the header in the <code>drawer</code> uses this setting.</p>
+<h4 id="post"><a href="#post" class="headerlink" title="post"></a>post</h4><ul>
+<li>entry_excerpt: how many posts summary words will be displayed in the index page.</li>
+<li>qr_code: posts/pages’ qr code, for more information, please click <a href="#QR_CODE">here</a></li>
+<li>prism: code highlight<ul>
+<li>theme: internal theme setting, including <code>default</code>, <code>coy</code>, <code>dark</code>, <code>funky</code>, <code>okaidia</code>, <code>solarizedlight</code>, <code>tomorrow</code>, <code>twilight</code></li>
+<li>line_number: whether show line numbers before the code, available options are <code>true</code> and <code>false</code></li>
+</ul>
+</li>
+<li>donate: post donate, please configure it with the examples. How to use icons please click <a href="#ICONS">here</a></li>
+</ul>
+<h4 id="share-menu"><a href="#share-menu" class="headerlink" title="share_menu"></a>share_menu</h4><p>Setting uo the share menu. If you don’t need any share options, please remove following contents and set <code>share_menu: false</code></p>
+<ul>
+<li>rss: article rss, the link is the same as the <code>path</code> in <code>hexo</code> <code>_config.yml</code> under <code>feed</code>, available options are <code>true</code> and <code>false</code>, more detailed click <a href="#RSS">here</a>.</li>
+<li>weibo: Sina Weibo, available options are <code>true</code> and <code>false</code></li>
+<li>twitter: Twitter, available options are <code>true</code> and <code>false</code></li>
+<li>facebook: Facebook, available options are <code>true</code> and <code>false</code></li>
+<li>googleplus: Google+, available options are <code>true</code> and <code>false</code></li>
+<li>linkedin: Linkedin, available options are <code>true</code> and <code>false</code></li>
+<li>qq: QQ, available options are <code>true</code> and <code>false</code></li>
+<li>telegram: Telegram, available options are <code>true</code> and <code>false</code></li>
+</ul>
+<h4 id="comment"><a href="#comment" class="headerlink" title="comment"></a>comment</h4><p>comment service plugin, available options are <code>disqus</code> and <code>custom</code></p>
+<ul>
+<li>use: <code>disqus</code> or <code>custom</code></li>
+<li>shortname: disqus short name, for example, <code>example.disqus.com</code>, so short name is <code>example</code>, if <code>use: custom</code>, this line is unavailable</li>
+</ul>
+<p>If you want to use the comment service that I haven’t add support, please click <a href="#customComment">here</a> for how to configure</p>
+<h4 id="pagination"><a href="#pagination" class="headerlink" title="pagination"></a>pagination</h4><p>Pagination setting</p>
+<ul>
+<li>show: after how many pages the number will be hidden. eg. the original pagination is <code>1 2 3 4 5 6</code>, then <code>show: 2</code>, the pagination will change to <code>1 2 ... 5 6</code></li>
+</ul>
+<h4 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h4><ul>
+<li><p>since: specify the date when the blog was setup</p>
+<blockquote>
+<p>I haven’t add a judgement here, it will lead to following problem.<br>If your blog was setup in in 2017, and the year now is 2017, so the copyright will display <code>2017 - 2017</code>, please avoid this.</p>
+</blockquote>
+</li>
+<li><p>ICP: this is for users who are in China Mainland to show his/her ICP number.</p>
+</li>
+</ul>
+<h4 id="pages"><a href="#pages" class="headerlink" title="pages"></a>pages</h4><p>How to use icons please click <a href="#ICONS">here</a></p>
+<h5 id="uncategorized-pages"><a href="#uncategorized-pages" class="headerlink" title="uncategorized pages"></a>uncategorized pages</h5><p>Custom pages setting, please follow format which is left in the <code>_config.yml</code> or the one below.</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">Test1</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">"/test1"</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">icon</span><span class="token punctuation">:</span> "`&amp;<span class="token comment" spellcheck="true">#xe84d;`"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>These lines will generate an entrance of a link called <code>Test1</code>, links to <code>yoursite.com/test1</code>, and the icon is <code>&amp;#xe84d;</code>.</p>
+<h5 id="categorized-pages"><a href="#categorized-pages" class="headerlink" title="categorized pages"></a>categorized pages</h5><p>Custom pages support the pages which belong to the same category to be shown under a section, if you wants to enable it, please configure it with the format that the left in the file.<br><strong>Key option is <code>cascade: true</code></strong></p>
+<h4 id="sns"><a href="#sns" class="headerlink" title="sns"></a>sns</h4><p>Here you can set up your contact information, please follow the format that left in the file. How to use icons please click <a href="#ICONS">here</a></p>
+<blockquote>
+<p>or you can fill <code>false</code> to disable.</p>
+</blockquote>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">Twitter</span><span class="token punctuation">:</span>
+    <span class="token key atrule">link</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//twitter.com
+    <span class="token key atrule">fa</span><span class="token punctuation">:</span> <span class="token string">'fa-twitter'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="Vendor"><a href="#Vendor" class="headerlink" title="Vendor"></a>Vendor</h3><p>The css and js files haven’t cdn service support, so they are accessed from your server directly. If you have your own cdn service, you can do following configurations.</p>
+<ul>
+<li>style_min_css: direct address</li>
+<li>js_min_js: direct address</li>
+<li>outdatedbrowser_min_js: direct address</li>
+</ul>
+<blockquote>
+<p>Through this feature you can modify the css and js.</p>
+</blockquote>
+<h3 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h3><h4 id="busuanzi"><a href="#busuanzi" class="headerlink" title="busuanzi"></a>busuanzi</h4><p>busuanzi is a plugin to count how many page views and unique visitors.<br>If you don’t need it, please delete following lines and set <code>busuanzi: false</code></p>
+<ul>
+<li>all_site_uv: All site unique visitors</li>
+<li>post_pv: how many times the page has been viewed</li>
+<li>busuanzi_pure_mini_js: busuanzi js address, it is hosted in China Mainland.</li>
+</ul>
+<h4 id="search"><a href="#search" class="headerlink" title="search"></a>search</h4><p>For now, this cant be disabled. Please install <code>hexo-generator-search</code> to prevent errors.</p>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-search --save
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>more details can be found <a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="noopener">here</a></p>
+<h4 id="Mathjax"><a href="#Mathjax" class="headerlink" title="Mathjax"></a>Mathjax</h4><p>If your post or page needs <code>Mathjax</code>, please add <code>mathjax: true</code> in the <code>font-matter</code>.</p>
+<h3 id="Advanced-settings"><a href="#Advanced-settings" class="headerlink" title="Advanced settings"></a>Advanced settings</h3><h4 id="Custom-css-and-js"><a href="#Custom-css-and-js" class="headerlink" title="Custom css and js"></a>Custom css and js</h4><p>If you want to add some custom code like <code>font-face</code>, <code>Google Analytics</code>, etc., please create a <code>custom</code> folder in the <code>layout</code> folder in theme folder, then create a <code>custom_head.ejs</code> file (the code inside  goes before <code>&lt;/head&gt;</code> ) or a <code>custom_js.ejs</code> file (the code inside  goes before <code>&lt;/body&gt;</code> ) to put your own code.</p>
+<h4 id="ICONS"><a href="#ICONS" class="headerlink" title="ICONS"></a>ICONS</h4><p>The theme supports <code>font awesome icons</code> and <code>Material icons</code>.<br>Add <code>fa:</code> to the option that you want to use <code>font awesome icons</code>.</p>
+<blockquote>
+<p>You can find icons <a href="http://fontawesome.io/icons/" target="_blank" rel="noopener">here</a></p>
+</blockquote>
+<p>Add <code>md:</code> to the option that you want to use <code>Material icons</code>.</p>
+<blockquote>
+<p>For icons that support modern browsers, you can find from <a href="https://material.io/icons" target="_blank" rel="noopener">here</a>. When you find the one you need, click it, and copy the characters <strong>after <code>https://material.io/icons/#ic_</code></strong><br>For icons that support all mainstream browsers, you can find from <a href="http://www.mdui.org/docs/material_icon" target="_blank" rel="noopener">here</a>, but the site hasn’t an English version. You can just browse the icon list or search an icon, click the one you need, copy the characters like <code>&amp;#xe84d;</code>.</p>
+</blockquote>
+<p>Add <code>null_icon: true</code> as a placeholer.</p>
+<h4 id="lightgallery"><a href="#lightgallery" class="headerlink" title="lightgallery"></a>lightgallery</h4><p><strong>unspported now</strong><br>Lightgallery is a gallery plugin, you can see what it can do just click the following picture.</p>
+<h4 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h4><p>If you need rss, please install <code>hexo-generator-feed</code></p>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>more details can be found <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">here</a>.</p>
+<h4 id="service-worker"><a href="#service-worker" class="headerlink" title="service_worker"></a>service_worker</h4><p>The theme has internal Service Worker support, if you need this feature, please open <code>source/sw.js</code> in the <strong>THEME FOLDER</strong>, and configure <code>ignoreFetch</code> to match your site setting, for more information, please google or yahoo; then, create a <code>offline.md</code> under <code>source</code> in the <strong>HEXO FLODER</strong>, <strong>the format is the same as the hexo markdown</strong></p>
+<p>available options are <code>true</code> and <code>pwa</code></p>
+<ul>
+<li>true: only inject <code>Service Worker</code></li>
+<li>pwa: The site supports Google’s <code>Progressive Web Apps</code></li>
+</ul>
+<p>If you use <code>pwa</code>, please open <code>source/manifest.json</code> in the <strong>THEME FOLDER</strong> to configure, for how to configure please google or yahoo.</p>
+<h4 id="archive-page"><a href="#archive-page" class="headerlink" title="archive page"></a>archive page</h4><h5 id="about-me"><a href="#about-me" class="headerlink" title="about_me"></a>about_me</h5><p>This is the <code>about</code> dialog in the <code>archive page</code>. If you need it, please create <code>about.yml</code> under <code>source/_data</code> in the <strong>HEXO FOLDER</strong>, and choose a following format to fill in. You can directly copy and paste to see the style.</p>
+<p>Options:</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">slogan</span><span class="token punctuation">:</span> show the slogan/description or not<span class="token punctuation">,</span> available options is `true`<span class="token punctuation">,</span> or just leave it blank.
+<span class="token key atrule">others</span><span class="token punctuation">:</span> the text under slogan/description. (these two options are independent)
+  <span class="token punctuation">-</span> <span class="token string">'1'</span>
+  <span class="token punctuation">-</span> <span class="token string">'2'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Format 1:</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">hellow</span><span class="token punctuation">:</span>
+  <span class="token key atrule">main</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xxxxxx
+      <span class="token key atrule">s_img</span><span class="token punctuation">:</span> /img/avatar.png
+    <span class="token key atrule">hi1</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xx
+      <span class="token key atrule">link</span><span class="token punctuation">:</span> //google.com
+      <span class="token key atrule">s_img</span><span class="token punctuation">:</span> /img/favicon.png
+    <span class="token key atrule">hi2</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> aaaa
+  <span class="token key atrule">more</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi3</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'561456415341'</span>
+      <span class="token key atrule">link</span><span class="token punctuation">:</span> //google.com
+      <span class="token key atrule">s_img</span><span class="token punctuation">:</span> /img/favicon.png
+    <span class="token key atrule">hi4</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'xxxxxxx'</span>
+      <span class="token key atrule">s_img</span><span class="token punctuation">:</span> /img/favicon.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Format 2:</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">hellow1</span><span class="token punctuation">:</span>
+  <span class="token key atrule">main</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xxxxxx
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">hi1</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xx
+      <span class="token key atrule">fa</span><span class="token punctuation">:</span> <span class="token string">'fa-beer'</span>
+    <span class="token key atrule">工作經歷</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xxxx
+      <span class="token key atrule">content_1</span><span class="token punctuation">:</span> Designer &amp; Developer，2222
+  <span class="token key atrule">more</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi3</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'1111'</span>
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">s_img</span><span class="token punctuation">:</span> /img/favicon.png
+    <span class="token key atrule">hi4</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'1111'</span>
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">c_img</span><span class="token punctuation">:</span> /img/favicon.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Format 3:</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">hellow2</span><span class="token punctuation">:</span>
+  <span class="token key atrule">main</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xxxxxx
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">md</span><span class="token punctuation">:</span> <span class="token string">'home'</span>
+    <span class="token key atrule">hi1</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xx
+      <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'xxxx/xxx'</span>
+      <span class="token key atrule">fa</span><span class="token punctuation">:</span> <span class="token string">'fa-beer'</span>
+    <span class="token key atrule">工作經歷</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> xxxx
+      <span class="token key atrule">content_1</span><span class="token punctuation">:</span> Designer &amp; Developer，2222
+  <span class="token key atrule">more</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hi3</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'1111'</span>
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">null_icon</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">hi4</span><span class="token punctuation">:</span>
+      <span class="token key atrule">content</span><span class="token punctuation">:</span> <span class="token string">'1111'</span>
+      <span class="token key atrule">one_line</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">fa</span><span class="token punctuation">:</span> <span class="token string">'fa-qq'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Some options meaning:</p>
+<ul>
+<li>one_line: single line content, if this is <code>true</code>, the text in <code>content:</code> will not be rendered.</li>
+<li>fa/md/null_icon: How to use icons please click <a href="#ICONS">here</a></li>
+<li>content_1: text that below the text from <code>content:</code></li>
+<li>link: web address</li>
+<li>s_img: square picture that shows before the section content.</li>
+<li>c_img: circular picture that shows before the section content.</li>
+</ul>
+<h5 id="random-pics"><a href="#random-pics" class="headerlink" title="random_pics"></a>random_pics</h5><p>The random pictures on the <code>Categories</code>, <code>Tags</code>, <code>Years</code> in the <code>archive page</code>(defining a certain picture is not supported). Those pictures are stored in <code>source/img/random</code> in the <strong>THEME FOLDER</strong>.<br>If you add picture(s), change the total pictures number.<br><strong>Only `jpg is supported</strong></p>
+<h3 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h3><h4 id="QR-CODE"><a href="#QR-CODE" class="headerlink" title="QR_CODE"></a>QR_CODE</h4><p>QR Code for posts and custom pages, available options are <code>true</code> and <code>false</code>, you need to install <code>hexo-helper-qrcode</code> plugin to enbale the feature. Please run following command in terminal in hexo folder.</p>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-helper-qrcode --save
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="Thumbnail"><a href="#Thumbnail" class="headerlink" title="Thumbnail"></a>Thumbnail</h4><p>Post and custom page support thumbnail.</p>
+<ul>
+<li>thumbnail: By using this method, the post thumbnail will be showed between <code>post title</code> and <code>post content</code>.</li>
+</ul>
+<h4 id="Custom-primary-amp-accent-color-in-post-and-custom-page"><a href="#Custom-primary-amp-accent-color-in-post-and-custom-page" class="headerlink" title="Custom primary &amp;/ accent color in post and custom page"></a>Custom primary &amp;/ accent color in post and custom page</h4><p>When you write post, add <code>primary_color</code> and/or <code>accent_color</code> in the <code>font-matter</code> can change this post’s theme color. Colors name is the same as <a href="#Color">Color</a><br>eg.</p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">title: This is title
+primary_color: grey
+<span class="token title important">accent_color: red
+<span class="token punctuation">-----------</span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="No-comment-No-category-No-tag"><a href="#No-comment-No-category-No-tag" class="headerlink" title="No comment, No category, No tag"></a>No comment, No category, No tag</h4><p>add following content to <code>font-matter</code> to disable comment, disable category, disable tag</p>
+<ul>
+<li>comment: set it <code>false</code> to disable comment</li>
+<li>category: set it <code>false</code> to disable category</li>
+<li>tag: set it <code>false</code> to disable tag</li>
+</ul>
+<h4 id="Pinned-Post"><a href="#Pinned-Post" class="headerlink" title="Pinned Post"></a>Pinned Post</h4><p>Just add <code>pinned: true</code> to <code>font-matter</code> to pin the post to top</p>
+<h4 id="customComment"><a href="#customComment" class="headerlink" title="customComment"></a>customComment</h4><p>please open <code>layout/custom/custom_comment.ejs</code> in the theme folder, and paste the comment service code to this file.<br>If the comment service needs you to set the <code>source id (or something like that)</code> of the page, please fill it with <code>&lt;%- config.url + config.root + page.path %&gt;</code></p>
+<h3 id="Custom-pages"><a href="#Custom-pages" class="headerlink" title="Custom pages"></a>Custom pages</h3><h4 id="Friends-page"><a href="#Friends-page" class="headerlink" title="Friends page"></a>Friends page</h4><p>Enter the <code>source</code> folder in <code>hexo</code> folder, create a folder with the name you like, then enter it and create a <code>index.md</code> file, fill it with following content</p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token hr punctuation">---</span>
+title: MY FRIENDS
+layout: friends
+<span class="token title important">header: header of friends page, can be left blank
+<span class="token punctuation">---</span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>then go back to the <code>source</code> folder, enter the <code>_data</code> folder (if there isn’t any, please create one), and create a file called <code>friends.yml</code> (<strong>the name can’t be changed</strong>), using following format to creat links.</p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml"><span class="token key atrule">Example</span><span class="token punctuation">:</span>
+    <span class="token key atrule">link</span><span class="token punctuation">:</span> Site address
+    <span class="token key atrule">avatar</span><span class="token punctuation">:</span> Avatar
+    <span class="token key atrule">descr</span><span class="token punctuation">:</span> Slogan or descrpition
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h4><p>Gallery supports multi album and single album.</p>
+<h5 id="multi-album"><a href="#multi-album" class="headerlink" title="multi album"></a>multi album</h5><p>Create a <code>galleries.yml</code> in <code>source/_data</code> in the <strong>HEXO FOLDER</strong>, and configure it with following format.<br>And add a custom page anywhere in <code>source</code> in the <strong>HEXO FOLDER</strong>, and fill <code>layout: galleries</code></p>
+<pre class="line-numbers language-yaml" mdui-tooltip="{content: 'yaml'}"><code class="language-yaml">Albun name<span class="token punctuation">:</span>
+  <span class="token key atrule">link</span><span class="token punctuation">:</span> URL
+  <span class="token key atrule">descr</span><span class="token punctuation">:</span> album description or something else
+  <span class="token key atrule">bg</span><span class="token punctuation">:</span> default image
+  <span class="token key atrule">logo</span><span class="token punctuation">:</span> this can be ignored<span class="token punctuation">,</span> a circular image<span class="token punctuation">,</span> configure to see what the style like.
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="single-album"><a href="#single-album" class="headerlink" title="single album"></a>single album</h5><p>Please create a custom page anywhere in <code>source</code> in the <strong>HEXO FOLDER</strong>, and fill <code>layout: gallery</code>, <strong>then add <code>photos:</code> with following format in the <code>font-matter</code></strong></p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">photos:
+  x:
+<span class="token code keyword">    img: /img/bg.png</span>
+<span class="token code keyword">    descr: 'description goes here'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Configure to see what the style like.</p>
+<h3 id="Known-issues"><a href="#Known-issues" class="headerlink" title="Known issues"></a>Known issues</h3><h4 id="Using-hexo-neat-plugin"><a href="#Using-hexo-neat-plugin" class="headerlink" title="Using hexo-neat plugin"></a>Using hexo-neat plugin</h4><p>Because <code>hexo-neat</code> plugin will add note when it neats the files, this will break the Android Chrome status bar color changing, if you want to/ are using this plugin, please do following modifications.</p>
+<p>Enter the <code>node_modules</code> folder in the <code>hexo</code> folder, find and enter <code>hexo-neat</code> folder, then enter <code>lib</code> folder, use your editor open <code>filter.js</code>, find following code and <strong>delete</strong></p>
+<p><strong>The number of rows for reference only, please seach the code</strong></p>
+<p>Line 31, 32</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> prefix <span class="token operator">=</span> <span class="token string">'&lt;!-- build time:'</span> <span class="token operator">+</span> <span class="token function">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" -->"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> end <span class="token operator">=</span> <span class="token string">'&lt;!-- rebuild by neat -->'</span><span class="token punctuation">;</span>
+result <span class="token operator">=</span> prefix <span class="token operator">+</span> result <span class="token operator">+</span> end<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>Line 58, 59</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> prefix <span class="token operator">=</span> <span class="token string">'/* build time:'</span> <span class="token operator">+</span> <span class="token function">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"*/\n"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> end <span class="token operator">=</span> <span class="token string">'\n/* rebuild by neat */'</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Line 87, 88</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> prefix <span class="token operator">=</span> <span class="token string">'// build time:'</span> <span class="token operator">+</span> <span class="token function">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> end <span class="token operator">=</span> <span class="token string">'\n//rebuild by neat '</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Find the following codes and <strong>modify</strong><br><strong>The number of rows for reference only, please seach the code</strong></p>
+<p>Line 60</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> css_result <span class="token operator">=</span> prefix <span class="token operator">+</span> result<span class="token punctuation">.</span>styles <span class="token operator">+</span> end<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>change to</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> css_result <span class="token operator">=</span> result<span class="token punctuation">.</span>styles<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Line 89</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> js_result <span class="token operator">=</span> prefix <span class="token operator">+</span> result<span class="token punctuation">.</span>code <span class="token operator">+</span> end<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>change to</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> js_result <span class="token operator">=</span> result<span class="token punctuation">.</span>code<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              本文许可协议：
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br>
+            <span>本文永久链接：<a href="https://blog.halyul.com/posts/mdui-doc-en (copy)/">https://blog.halyul.com/posts/mdui-doc-en (copy)/</a></span>
+            
+              <br>
+              <span>本文Markdown：<a href="https://blog.halyul.com/posts/mdui-doc-en (copy)/mdui-doc-en (copy).md">https://blog.halyul.com/posts/mdui-doc-en (copy)/mdui-doc-en (copy).md</a></span>
+            
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe149;</i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/categories/Document/">
+                    <span>Document</span>
+                  </a>
+                
+                  <a href="/categories/Document/xxx/">
+                    <span>xxx</span>
+                  </a>
+                
+                  <a href="/categories/Document/xxx/xx/">
+                    <span>xx</span>
+                  </a>
+                
+              </div>
+            
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/tags/Hexo/">
+                    <span>Hexo</span>
+                  </a>
+                
+              </div>
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Install" data-href="#Install"><span class="toc-number"></span> <span class="toc-text">1. Install</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Install-the-theme" data-href="#Install-the-theme"><span class="toc-number"></span> <span class="toc-text">1.1. Install the theme</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Enable-the-theme" data-href="#Enable-the-theme"><span class="toc-number"></span> <span class="toc-text">1.2. Enable the theme</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Config" data-href="#Config"><span class="toc-number"></span> <span class="toc-text">2. Config</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#location" data-href="#location"><span class="toc-number"></span> <span class="toc-text">2.1. location</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#style" data-href="#style"><span class="toc-number"></span> <span class="toc-text">2.2. style</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#HTML-Head" data-href="#HTML-Head"><span class="toc-number"></span> <span class="toc-text">2.3. HTML Head</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Color" data-href="#Color"><span class="toc-number"></span> <span class="toc-text">2.4. Color</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Primary-colors" data-href="#Primary-colors"><span class="toc-number"></span> <span class="toc-text">2.4.1. Primary colors</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Accent-colors" data-href="#Accent-colors"><span class="toc-number"></span> <span class="toc-text">2.4.2. Accent colors</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Layout" data-href="#Layout"><span class="toc-number"></span> <span class="toc-text">2.4.3. Layout</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#appbar" data-href="#appbar"><span class="toc-number"></span> <span class="toc-text">2.5. appbar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#post" data-href="#post"><span class="toc-number"></span> <span class="toc-text">2.6. post</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#share-menu" data-href="#share-menu"><span class="toc-number"></span> <span class="toc-text">2.7. share_menu</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#comment" data-href="#comment"><span class="toc-number"></span> <span class="toc-text">2.8. comment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#pagination" data-href="#pagination"><span class="toc-number"></span> <span class="toc-text">2.9. pagination</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#footer" data-href="#footer"><span class="toc-number"></span> <span class="toc-text">2.10. footer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#pages" data-href="#pages"><span class="toc-number"></span> <span class="toc-text">2.11. pages</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#uncategorized-pages" data-href="#uncategorized-pages"><span class="toc-number"></span> <span class="toc-text">2.11.1. uncategorized pages</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#categorized-pages" data-href="#categorized-pages"><span class="toc-number"></span> <span class="toc-text">2.11.2. categorized pages</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#sns" data-href="#sns"><span class="toc-number"></span> <span class="toc-text">2.12. sns</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Vendor" data-href="#Vendor"><span class="toc-number"></span> <span class="toc-text">3. Vendor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Plugins" data-href="#Plugins"><span class="toc-number"></span> <span class="toc-text">4. Plugins</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#busuanzi" data-href="#busuanzi"><span class="toc-number"></span> <span class="toc-text">4.1. busuanzi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#search" data-href="#search"><span class="toc-number"></span> <span class="toc-text">4.2. search</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Mathjax" data-href="#Mathjax"><span class="toc-number"></span> <span class="toc-text">4.3. Mathjax</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Advanced-settings" data-href="#Advanced-settings"><span class="toc-number"></span> <span class="toc-text">5. Advanced settings</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-css-and-js" data-href="#Custom-css-and-js"><span class="toc-number"></span> <span class="toc-text">5.1. Custom css and js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#ICONS" data-href="#ICONS"><span class="toc-number"></span> <span class="toc-text">5.2. ICONS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#lightgallery" data-href="#lightgallery"><span class="toc-number"></span> <span class="toc-text">5.3. lightgallery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#RSS" data-href="#RSS"><span class="toc-number"></span> <span class="toc-text">5.4. RSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#service-worker" data-href="#service-worker"><span class="toc-number"></span> <span class="toc-text">5.5. service_worker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#archive-page" data-href="#archive-page"><span class="toc-number"></span> <span class="toc-text">5.6. archive page</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#about-me" data-href="#about-me"><span class="toc-number"></span> <span class="toc-text">5.6.1. about_me</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#random-pics" data-href="#random-pics"><span class="toc-number"></span> <span class="toc-text">5.6.2. random_pics</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Post" data-href="#Post"><span class="toc-number"></span> <span class="toc-text">6. Post</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#QR-CODE" data-href="#QR-CODE"><span class="toc-number"></span> <span class="toc-text">6.1. QR_CODE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Thumbnail" data-href="#Thumbnail"><span class="toc-number"></span> <span class="toc-text">6.2. Thumbnail</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-primary-amp-accent-color-in-post-and-custom-page" data-href="#Custom-primary-amp-accent-color-in-post-and-custom-page"><span class="toc-number"></span> <span class="toc-text">6.3. Custom primary &amp;/ accent color in post and custom page</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#No-comment-No-category-No-tag" data-href="#No-comment-No-category-No-tag"><span class="toc-number"></span> <span class="toc-text">6.4. No comment, No category, No tag</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Pinned-Post" data-href="#Pinned-Post"><span class="toc-number"></span> <span class="toc-text">6.5. Pinned Post</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#customComment" data-href="#customComment"><span class="toc-number"></span> <span class="toc-text">6.6. customComment</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-pages" data-href="#Custom-pages"><span class="toc-number"></span> <span class="toc-text">7. Custom pages</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Friends-page" data-href="#Friends-page"><span class="toc-number"></span> <span class="toc-text">7.1. Friends page</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Gallery" data-href="#Gallery"><span class="toc-number"></span> <span class="toc-text">7.2. Gallery</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#multi-album" data-href="#multi-album"><span class="toc-number"></span> <span class="toc-text">7.2.1. multi album</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#single-album" data-href="#single-album"><span class="toc-number"></span> <span class="toc-text">7.2.2. single album</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Known-issues" data-href="#Known-issues"><span class="toc-number"></span> <span class="toc-text">8. Known issues</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Using-hexo-neat-plugin" data-href="#Using-hexo-neat-plugin"><span class="toc-number"></span> <span class="toc-text">8.1. Using hexo-neat plugin</span></a></li></ol></li></ol>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Install" data-href="#Install"><span class="toc-number"></span> <span class="toc-text">1. Install</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Install-the-theme" data-href="#Install-the-theme"><span class="toc-number"></span> <span class="toc-text">1.1. Install the theme</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Enable-the-theme" data-href="#Enable-the-theme"><span class="toc-number"></span> <span class="toc-text">1.2. Enable the theme</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Config" data-href="#Config"><span class="toc-number"></span> <span class="toc-text">2. Config</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#location" data-href="#location"><span class="toc-number"></span> <span class="toc-text">2.1. location</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#style" data-href="#style"><span class="toc-number"></span> <span class="toc-text">2.2. style</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#HTML-Head" data-href="#HTML-Head"><span class="toc-number"></span> <span class="toc-text">2.3. HTML Head</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Color" data-href="#Color"><span class="toc-number"></span> <span class="toc-text">2.4. Color</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Primary-colors" data-href="#Primary-colors"><span class="toc-number"></span> <span class="toc-text">2.4.1. Primary colors</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Accent-colors" data-href="#Accent-colors"><span class="toc-number"></span> <span class="toc-text">2.4.2. Accent colors</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Layout" data-href="#Layout"><span class="toc-number"></span> <span class="toc-text">2.4.3. Layout</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#appbar" data-href="#appbar"><span class="toc-number"></span> <span class="toc-text">2.5. appbar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#post" data-href="#post"><span class="toc-number"></span> <span class="toc-text">2.6. post</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#share-menu" data-href="#share-menu"><span class="toc-number"></span> <span class="toc-text">2.7. share_menu</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#comment" data-href="#comment"><span class="toc-number"></span> <span class="toc-text">2.8. comment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#pagination" data-href="#pagination"><span class="toc-number"></span> <span class="toc-text">2.9. pagination</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#footer" data-href="#footer"><span class="toc-number"></span> <span class="toc-text">2.10. footer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#pages" data-href="#pages"><span class="toc-number"></span> <span class="toc-text">2.11. pages</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#uncategorized-pages" data-href="#uncategorized-pages"><span class="toc-number"></span> <span class="toc-text">2.11.1. uncategorized pages</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#categorized-pages" data-href="#categorized-pages"><span class="toc-number"></span> <span class="toc-text">2.11.2. categorized pages</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#sns" data-href="#sns"><span class="toc-number"></span> <span class="toc-text">2.12. sns</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Vendor" data-href="#Vendor"><span class="toc-number"></span> <span class="toc-text">3. Vendor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Plugins" data-href="#Plugins"><span class="toc-number"></span> <span class="toc-text">4. Plugins</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#busuanzi" data-href="#busuanzi"><span class="toc-number"></span> <span class="toc-text">4.1. busuanzi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#search" data-href="#search"><span class="toc-number"></span> <span class="toc-text">4.2. search</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Mathjax" data-href="#Mathjax"><span class="toc-number"></span> <span class="toc-text">4.3. Mathjax</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Advanced-settings" data-href="#Advanced-settings"><span class="toc-number"></span> <span class="toc-text">5. Advanced settings</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-css-and-js" data-href="#Custom-css-and-js"><span class="toc-number"></span> <span class="toc-text">5.1. Custom css and js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#ICONS" data-href="#ICONS"><span class="toc-number"></span> <span class="toc-text">5.2. ICONS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#lightgallery" data-href="#lightgallery"><span class="toc-number"></span> <span class="toc-text">5.3. lightgallery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#RSS" data-href="#RSS"><span class="toc-number"></span> <span class="toc-text">5.4. RSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#service-worker" data-href="#service-worker"><span class="toc-number"></span> <span class="toc-text">5.5. service_worker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#archive-page" data-href="#archive-page"><span class="toc-number"></span> <span class="toc-text">5.6. archive page</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#about-me" data-href="#about-me"><span class="toc-number"></span> <span class="toc-text">5.6.1. about_me</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#random-pics" data-href="#random-pics"><span class="toc-number"></span> <span class="toc-text">5.6.2. random_pics</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Post" data-href="#Post"><span class="toc-number"></span> <span class="toc-text">6. Post</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#QR-CODE" data-href="#QR-CODE"><span class="toc-number"></span> <span class="toc-text">6.1. QR_CODE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Thumbnail" data-href="#Thumbnail"><span class="toc-number"></span> <span class="toc-text">6.2. Thumbnail</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-primary-amp-accent-color-in-post-and-custom-page" data-href="#Custom-primary-amp-accent-color-in-post-and-custom-page"><span class="toc-number"></span> <span class="toc-text">6.3. Custom primary &amp;/ accent color in post and custom page</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#No-comment-No-category-No-tag" data-href="#No-comment-No-category-No-tag"><span class="toc-number"></span> <span class="toc-text">6.4. No comment, No category, No tag</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Pinned-Post" data-href="#Pinned-Post"><span class="toc-number"></span> <span class="toc-text">6.5. Pinned Post</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#customComment" data-href="#customComment"><span class="toc-number"></span> <span class="toc-text">6.6. customComment</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Custom-pages" data-href="#Custom-pages"><span class="toc-number"></span> <span class="toc-text">7. Custom pages</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Friends-page" data-href="#Friends-page"><span class="toc-number"></span> <span class="toc-text">7.1. Friends page</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Gallery" data-href="#Gallery"><span class="toc-number"></span> <span class="toc-text">7.2. Gallery</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#multi-album" data-href="#multi-album"><span class="toc-number"></span> <span class="toc-text">7.2.1. multi album</span></a></li><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#single-album" data-href="#single-album"><span class="toc-number"></span> <span class="toc-text">7.2.2. single album</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Known-issues" data-href="#Known-issues"><span class="toc-number"></span> <span class="toc-text">8. Known issues</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Using-hexo-neat-plugin" data-href="#Using-hexo-neat-plugin"><span class="toc-number"></span> <span class="toc-text">8.1. Using hexo-neat plugin</span></a></li></ol></li></ol>
+  </ul>
+</div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
+      <a href="/posts/short/" class="theme-post__pagination__prev__content mdui-text-left">
+        <div>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          fkshort
+        </div>
+      </a>
+    </div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/posts/mdui-doc-en/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          hexo-theme-mdui document English version
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close="">不要</button>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1494048300000
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>Halyul</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>你的浏览器已经过气辣！</h6>
+    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+</body>
+</html>

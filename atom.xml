@@ -191,8 +191,8 @@
   
   <entry>
     <title>hexo-theme-mdui document English version</title>
-    <link href="https://blog.halyul.com/posts/mdui-doc-en/"/>
-    <id>https://blog.halyul.com/posts/mdui-doc-en/</id>
+    <link href="https://blog.halyul.com/posts/mdui-doc-en%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/mdui-doc-en (copy)/</id>
     <published>2017-03-23T12:01:00.000Z</published>
     <updated>2017-05-06T05:25:00.000Z</updated>
     
@@ -541,8 +541,8 @@ result <span class="token operator">=</span> prefix <span class="token operator"
   
   <entry>
     <title>hexo-theme-mdui document English version</title>
-    <link href="https://blog.halyul.com/posts/mdui-doc-en%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/mdui-doc-en (copy)/</id>
+    <link href="https://blog.halyul.com/posts/mdui-doc-en/"/>
+    <id>https://blog.halyul.com/posts/mdui-doc-en/</id>
     <published>2017-03-23T12:01:00.000Z</published>
     <updated>2017-05-06T05:25:00.000Z</updated>
     
@@ -981,8 +981,8 @@ result <span class="token operator">=</span> prefix <span class="token operator"
   
   <entry>
     <title>失踪人口回归系列之增强站点SSL安全性</title>
-    <link href="https://blog.halyul.com/posts/imporve-ssl%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/imporve-ssl (copy)/</id>
+    <link href="https://blog.halyul.com/posts/imporve-ssl/"/>
+    <id>https://blog.halyul.com/posts/imporve-ssl/</id>
     <published>2017-03-22T11:39:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     
@@ -1173,8 +1173,8 @@ $ openssl dhparam -out dhparam.pem 4096
   
   <entry>
     <title>失踪人口回归系列之增强站点SSL安全性</title>
-    <link href="https://blog.halyul.com/posts/imporve-ssl/"/>
-    <id>https://blog.halyul.com/posts/imporve-ssl/</id>
+    <link href="https://blog.halyul.com/posts/imporve-ssl%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/imporve-ssl (copy)/</id>
     <published>2017-03-22T11:39:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     

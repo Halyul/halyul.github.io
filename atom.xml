@@ -1365,8 +1365,8 @@ $ openssl dhparam -out dhparam.pem 4096
   
   <entry>
     <title>失踪人口回归系列之在VPS上搭建HEXO的GIT部署环境</title>
-    <link href="https://blog.halyul.com/posts/vps-hexo%20(copy)/"/>
-    <id>https://blog.halyul.com/posts/vps-hexo (copy)/</id>
+    <link href="https://blog.halyul.com/posts/vps-hexo/"/>
+    <id>https://blog.halyul.com/posts/vps-hexo/</id>
     <published>2017-03-22T09:53:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     
@@ -1508,8 +1508,8 @@ $ <span class="token function">chown</span> -hR git:git /path/to/your/site
   
   <entry>
     <title>失踪人口回归系列之在VPS上搭建HEXO的GIT部署环境</title>
-    <link href="https://blog.halyul.com/posts/vps-hexo/"/>
-    <id>https://blog.halyul.com/posts/vps-hexo/</id>
+    <link href="https://blog.halyul.com/posts/vps-hexo%20(copy)/"/>
+    <id>https://blog.halyul.com/posts/vps-hexo (copy)/</id>
     <published>2017-03-22T09:53:00.000Z</published>
     <updated>2017-11-25T09:58:00.000Z</updated>
     

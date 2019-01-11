@@ -16,7 +16,7 @@
         status: false
       },
       versions: {
-        theme: "2.0.2",
+        theme: "2.0.3",
         mdui: "0.4.0",
         fetch: "3.0.0",
         es6promise: "4.2.5+7f2b526d",
@@ -520,10 +520,10 @@
         
   <div class="theme-archive">
     
-<div id="side-content" class="mdui-color-teal theme-archive__side-content">
+<div id="side-content" class="mdui-color-cyan theme-archive__side-content">
   <div class="mdui-grid-tile" style="overflow: visible;margin-bottom: 0;">
     <div class="theme-archive__side-content__bg">
-      <img src="/images/random/42.png">
+      <img src="/images/random/38.png">
     </div>
   </div>
   <div class="theme-archive__side-content__content">
@@ -783,6 +783,12 @@
 <script type="text/javascript">
   document.querySelector('body').classList.add('theme-loaded')
 </script>
+
+
+  <script type="text/javascript">
+    mdui.alert("This site and its content are for demo only! If the site reloaded, you will see this alert again.", "Demo Alert", function(){},{history:false})
+    console.warn("This site is for demo only!")
+  </script>
 
 
 </body>

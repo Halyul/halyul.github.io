@@ -675,7 +675,7 @@
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/15.png"/>
+            <img src="/images/random/9.png"/>
           </section>
         
         <section class="mdui-typo theme-post__card__content">
@@ -966,7 +966,7 @@
     function detechTheme() {
       var modeFlag = localStorage.getItem('darkMode');
       // true for dark mode, false for bright mode
-      if(modeFlag){
+      if(modeFlag === "true"){
         document.querySelector('body').classList.add('mdui-theme-layout-dark')
         return true
       } else if(!window.matchMedia) {

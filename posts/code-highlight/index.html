@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.1.0",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>Code Highlight Style test - Demo Blog</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="Halyul">
+  
+      <meta name="description" content="Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org">
+  
+  <meta name="keywords" content="blog, hexo, mdui">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="https://halyul.github.io">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Code Highlight Style test - Demo Blog | Demo Blog">
+  <meta property="og:image" content="/images/favicon.png">
+  
+    <meta property="og:description" content="Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org">
+  
+
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        Halyul
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        I&#39;m your slogan!
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">Index</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+      <div class="mdui-list-item-content">Archives</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
+            <div class="mdui-list-item-content">Categories</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                杂
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Document
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">Tags</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                教程
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">Years</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+            <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
+              2018
+            </a>
+          
+            <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+              2017
+            </a>
+          
+            <a href="/archives/2016/" class="mdui-list-item mdui-ripple">
+              2016
+            </a>
+          
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+            <a href="/archives/1970/" class="mdui-list-item mdui-ripple">
+              1970
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
+      
+        
+          
+            <a href="/friends" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
+              
+              
+              <div class="mdui-list-item-content">Test1</div>
+            </a>
+        
+      
+        
+          
+            <a href="/apply-for-link" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
+              
+              
+              
+              <div class="mdui-list-item-content">Test2</div>
+            </a>
+        
+      
+        
+          
+            <a href="/galleries" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test3</div>
+            </a>
+        
+      
+        
+          <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test4</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              
+                
+                  <a href="/myfriends" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST1
+                  </a>
+              
+                
+                  <a href="/timeline" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST2
+                  </a>
+              
+            </div>
+          </div>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br />
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br />
+    <span>
+      Copyright ©
+      <span year></span>
+      Halyul
+    </span>
+    
+    
+      <br />
+      <span>
+        Last Updated: May 22, 2020
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      Code Highlight Style test
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>Posted: </span>
+        <span style="float: right">Jul 25, 2019</span>
+        
+        <br>
+          <span>Last Modified: </span>
+          <span>Oct 19, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        Article QR Code
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACa0lEQVR42u3aQW4CMRAEQP7/6eQaKQK6x15ng2pPCMhCOdKMac/j66OvBx4eHh4eHh4e3s14j/h6ersfr/5+/+u7PXu88t3w8PDwzvDelNonH/ya9/qvni3Hhu+Gh4eHd5CXl++kTOfPtC3nTTvBw8PDuzFvto0uYgU8PDy8D+K1G+jXy5Fv3PHw8PDuxssLdLJFThpDG+xenrXg4eHhxbw2Yjj5+Oj5Hh4eHl7AmwUEbYCbhxSz2AIPDw/vJC8vxLORgvzQqx26wsPDw7sDL48DkjawEvuuDB/g4eHhXc3Lb7ce0eaLmLec4hcDHh4e3lbeytDAejuZPV/EuHh4eHhbebPC3Rb3N/FBHApHYTEeHh7eQd5s4KmNX2ehcHGEhoeHh/dHvJWoN79PHuAWr+Lh4eFdzKvL7vJAQN6WNowO4OHh4V3Ga8PTFlAf/49GE/Dw8PDO8Ip4tIwq6oOr62bK8PDw8Lby8lGA/EoKetsStg1d4eHh4S3z1o/882VqA9lZMIGHh4d3NW+lMbRxRvJMPnQ1jHHx8PDwlnktY1ay8/esNx48PDy8k7xdcUBS0POxg7ZJ4OHh4Z3nJcdg0ceM8BsCDjw8PLyDvOTWs0P9ZCHauHb4iwEPDw9vmddeedTbDl0ljSr6l+Dh4eFdzJsV5fw9+ZIlrSVqM3h4eHhHeG0zmJX+dqQg/zfg4eHh/RWvLdBJYDHbLrfjCHh4eHj/i5ewZ9v0NjjGw8PDuz9vtpnOm8dw2AsPDw/vIC8JI1YOq3a1ATw8PLw78NoIYDZS0Dak4eLi4eHhXcz7vAsPDw8PDw8PD+8G1ze6GfcTgvAbTgAAAABJRU5ErkJggg==" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://halyul.github.io//posts/code-highlight/index.html" target="_blank" class="mdui-ripple">
+                Share to Facebook
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=https://halyul.github.io//posts/code-highlight/index.html" target="_blank" class="mdui-ripple">
+                Share to Google+
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://halyul.github.io//posts/code-highlight/index.html&title=Code Highlight Style test" target="_blank" class="mdui-ripple">
+                Share to Linkedin
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Code Highlight Style test&url=https://halyul.github.io//posts/code-highlight/index.html&via=Halyul" target="_blank" class="mdui-ripple">
+                Share to Twitter
+            </a>
+        </li>
+      
+
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
+    
+      theme-post__warpper--center
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/23.png"/>
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p>Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of <a href="https://highlightjs.org" target="_blank" rel="noopener">https://highlightjs.org</a></p>
+<a id="more"></a>
+
+<pre class="line-numbers language-plain" mdui-tooltip="{content: 'plain'}"><code class="language-plain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-rust" mdui-tooltip="{content: 'rust'}"><code class="language-rust"><span class="token attribute attr-name">#[derive(Debug)]</span>
+<span class="token keyword">pub</span> <span class="token keyword">enum</span> State <span class="token punctuation">{</span>
+    Start<span class="token punctuation">,</span>
+    Transient<span class="token punctuation">,</span>
+    Closed<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> From<span class="token operator">&lt;</span><span class="token operator">&amp;</span>'a str<span class="token operator">></span> <span class="token keyword">for</span> State <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function">from</span><span class="token punctuation">(</span>s<span class="token punctuation">:</span> <span class="token operator">&amp;</span>'a str<span class="token punctuation">)</span> <span class="token punctuation">-></span> Self <span class="token punctuation">{</span>
+        <span class="token keyword">match</span> s <span class="token punctuation">{</span>
+            <span class="token string">"start"</span> <span class="token operator">=</span><span class="token operator">></span> State<span class="token punctuation">:</span><span class="token punctuation">:</span>Start<span class="token punctuation">,</span>
+            <span class="token string">"closed"</span> <span class="token operator">=</span><span class="token operator">></span> State<span class="token punctuation">:</span><span class="token punctuation">:</span>Closed<span class="token punctuation">,</span>
+            _ <span class="token operator">=</span><span class="token operator">></span> <span class="token function">unreachable!</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-json" mdui-tooltip="{content: 'json'}"><code class="language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"apples"</span><span class="token punctuation">,</span>
+    <span class="token property">"count"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">12000</span><span class="token punctuation">,</span> <span class="token number">20000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"..."</span><span class="token punctuation">,</span> <span class="token property">"sensitive"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"oranges"</span><span class="token punctuation">,</span>
+    <span class="token property">"count"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">17500</span><span class="token punctuation">,</span> <span class="token null">null</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"..."</span><span class="token punctuation">,</span> <span class="token property">"sensitive"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" mdui-tooltip="{content: 'python'}"><code class="language-python">@requires_authorization
+<span class="token keyword">def</span> <span class="token function">somefunc</span><span class="token punctuation">(</span>param1<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> param2<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    r<span class="token triple-quoted-string string">'''A docstring'''</span>
+    <span class="token keyword">if</span> param1 <span class="token operator">></span> param2<span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># interesting</span>
+        <span class="token keyword">print</span> <span class="token string">'Gre\'ater'</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>param2 <span class="token operator">-</span> param1 <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> 0b10l<span class="token punctuation">)</span> <span class="token operator">or</span> None
+
+<span class="token keyword">class</span> <span class="token class-name">SomeClass</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+
+<span class="token operator">>></span><span class="token operator">></span> message <span class="token operator">=</span> <span class="token triple-quoted-string string">'''interpreter
+... prompt'''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-html" mdui-tooltip="{content: 'html'}"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css"><span class="token selector">body </span><span class="token punctuation">{</span><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">500</span>px<span class="token punctuation">;</span><span class="token punctuation">}</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>application/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
+  <span class="token keyword">function</span> <span class="token function">$init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">checked</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>title<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token comment" spellcheck="true">&lt;!-- here goes the rest of the page --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">$initHighlight</span><span class="token punctuation">(</span>block<span class="token punctuation">,</span> cls<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cls<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span><span class="token regex">/\bno\-highlight\b/</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token function">process</span><span class="token punctuation">(</span>block<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token number">0x0F</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+             <span class="token template-string"><span class="token string">` class="</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>cls<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">"`</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/* handle exception */</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> classes<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">checkCondition</span><span class="token punctuation">(</span>classes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">===</span> undefined<span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'undefined'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>web<span class="token operator">-</span>component<span class="token operator">></span><span class="token punctuation">{</span>block<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>web<span class="token operator">-</span>component<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> $initHighlight<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-cpp" mdui-tooltip="{content: 'cpp'}"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">/* An annoying "Hello World" example */</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">0xFFFF</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello, World!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+  <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+  unordered_map <span class="token operator">&lt;</span>string<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span>string<span class="token operator">></span> <span class="token operator">></span> m<span class="token punctuation">;</span>
+  m<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"\\\\"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// this is an error</span>
+
+  <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">2e3</span> <span class="token operator">+</span> <span class="token number">12l</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-sql" mdui-tooltip="{content: 'sql'}"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token string">"topic"</span> <span class="token punctuation">(</span>
+    <span class="token string">"id"</span> <span class="token keyword">serial</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    <span class="token string">"forum_id"</span> <span class="token keyword">integer</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token string">"subject"</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> <span class="token string">"topic"</span>
+<span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> forum_id <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span><span class="token string">"forum_id"</span><span class="token punctuation">)</span>
+<span class="token keyword">REFERENCES</span> <span class="token string">"forum"</span> <span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">-- Initials</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> <span class="token string">"topic"</span> <span class="token punctuation">(</span><span class="token string">"forum_id"</span><span class="token punctuation">,</span> <span class="token string">"subject"</span><span class="token punctuation">)</span>
+<span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token string">'artagnian'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-objectivec" mdui-tooltip="{content: 'objectivec'}"><code class="language-objectivec"><span class="token macro property">#<span class="token directive keyword">import</span> &lt;UIKit/UIKit.h></span>
+<span class="token macro property">#<span class="token directive keyword">import</span> "Dependency.h"</span>
+
+<span class="token keyword">@protocol</span> WorldDataSource
+<span class="token operator">@</span>optional
+<span class="token operator">-</span> <span class="token punctuation">(</span>NSString<span class="token operator">*</span><span class="token punctuation">)</span>worldName<span class="token punctuation">;</span>
+<span class="token operator">@</span>required
+<span class="token operator">-</span> <span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>allowsToLive<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
+
+<span class="token keyword">@property</span> <span class="token punctuation">(</span>nonatomic<span class="token punctuation">,</span> readonly<span class="token punctuation">)</span> NSString <span class="token operator">*</span>title<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span>IBAction<span class="token punctuation">)</span> show<span class="token punctuation">;</span>
+<span class="token keyword">@end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" mdui-tooltip="{content: 'java'}"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * @author John Smith &lt;john.smith@example.com>
+*/</span>
+<span class="token keyword">package</span> l2f<span class="token punctuation">.</span>gameserver<span class="token punctuation">.</span>model<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">L2Char</span> <span class="token keyword">extends</span> <span class="token class-name">L2Object</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Short ERROR <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">moveTo</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> z<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    _ai <span class="token operator">=</span> null<span class="token punctuation">;</span>
+    <span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Should not be called"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">></span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// wtf!?</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-swift" mdui-tooltip="{content: 'swift'}"><code class="language-swift"><span class="token keyword">import</span> <span class="token builtin">Foundation</span>
+
+<span class="token atrule">@objc</span> <span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">:</span> <span class="token builtin">Entity</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> name<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token operator">!</span>
+  <span class="token keyword">var</span> age<span class="token punctuation">:</span>  <span class="token builtin">Int</span><span class="token operator">!</span>
+
+  <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/* /* ... */</span> <span class="token operator">*</span><span class="token operator">/</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment" spellcheck="true">// Return a descriptive string for this person</span>
+  <span class="token keyword">func</span> <span class="token function">description</span><span class="token punctuation">(</span>offset<span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">"<span class="token interpolation"><span class="token delimiter variable">\(</span>name<span class="token delimiter variable">)</span></span> is <span class="token interpolation"><span class="token delimiter variable">\(</span>age <span class="token operator">+</span> offset<span class="token delimiter variable">)</span></span> years old"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-css" mdui-tooltip="{content: 'css'}"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Chunkfive<span class="token punctuation">;</span> <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url('Chunkfive.otf')</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body, <span class="token class">.usertext</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#F0F0F0</span><span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#600</span><span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> Chunkfive, sans<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@import</span> <span class="token url">url(print.css)</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">a<span class="token attribute">[href^=http]</span><span class="token pseudo-element">::after</span> </span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>href<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-ruby" mdui-tooltip="{content: 'ruby'}"><code class="language-ruby"><span class="token comment" spellcheck="true"># The Greeter class</span>
+<span class="token keyword">class</span> <span class="token class-name">Greeter</span>
+  <span class="token keyword">def</span> <span class="token function">initialize</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    <span class="token variable">@name</span> <span class="token operator">=</span> name<span class="token punctuation">.</span>capitalize
+  <span class="token keyword">end</span>
+
+  <span class="token keyword">def</span> salute
+    puts <span class="token string">"Hello <span class="token interpolation"><span class="token delimiter tag">#{</span>@name<span class="token delimiter tag">}</span></span>!"</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+g <span class="token operator">=</span> <span class="token constant">Greeter</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token string">"world"</span><span class="token punctuation">)</span>
+g<span class="token punctuation">.</span>salute<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-makefile" mdui-tooltip="{content: 'makefile'}"><code class="language-makefile"><span class="token comment" spellcheck="true"># Makefile</span>
+
+BUILDDIR      <span class="token operator">=</span> _build
+EXTRAS       <span class="token operator">?=</span> <span class="token variable">$</span><span class="token punctuation">(</span>BUILDDIR<span class="token punctuation">)</span>/extras
+
+<span class="token builtin">.PHONY</span><span class="token punctuation">:</span> main clean
+
+<span class="token symbol">main</span><span class="token punctuation">:</span>
+    <span class="token operator">@</span>echo <span class="token string">"Building main facility..."</span>
+    build_main <span class="token variable">$</span><span class="token punctuation">(</span>BUILDDIR<span class="token punctuation">)</span>
+
+<span class="token symbol">clean</span><span class="token punctuation">:</span>
+    rm -rf <span class="token variable">$</span><span class="token punctuation">(</span>BUILDDIR<span class="token punctuation">)</span>/*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-go" mdui-tooltip="{content: 'go'}"><code class="language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">"fmt"</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ch <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">chan</span> <span class="token builtin">float64</span><span class="token punctuation">)</span>
+    ch <span class="token operator">&lt;-</span> <span class="token number">1.0e10</span>    <span class="token comment" spellcheck="true">// magic number</span>
+    x<span class="token punctuation">,</span> ok <span class="token operator">:=</span> <span class="token operator">&lt;-</span> ch
+    <span class="token keyword">defer</span> fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">`exitting now\`</span><span class="token punctuation">)</span>
+    <span class="token keyword">go</span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token function">len</span><span class="token punctuation">(</span><span class="token string">"hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" mdui-tooltip="{content: 'bash'}"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token comment" spellcheck="true">###### CONFIG</span>
+ACCEPTED_HOSTS<span class="token operator">=</span><span class="token string">"/root/.hag_accepted.conf"</span>
+BE_VERBOSE<span class="token operator">=</span>false
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$UID</span>"</span> -ne 0 <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+  <span class="token keyword">echo</span> <span class="token string">"Superuser rights required"</span>
+  <span class="token keyword">exit</span> 2
+<span class="token keyword">fi</span>
+
+genApacheConf<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> -e <span class="token string">"# Host <span class="token variable">${HOME_DIR}</span><span class="token variable">$1</span>/<span class="token variable">$2</span> :"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-ini" mdui-tooltip="{content: 'ini'}"><code class="language-ini"><span class="token comment" spellcheck="true">; boilerplate</span>
+<span class="token selector">[package]</span>
+<span class="token constant">name</span> <span class="token attr-value"><span class="token punctuation">=</span> "some_name"</span>
+<span class="token constant">authors</span> <span class="token attr-value"><span class="token punctuation">=</span> ["Author"]</span>
+<span class="token constant">description</span> <span class="token attr-value"><span class="token punctuation">=</span> "This is \</span>
+a description"
+
+<span class="token selector">[[lib]</span>]
+<span class="token constant">name</span> <span class="token attr-value"><span class="token punctuation">=</span> ${NAME}</span>
+<span class="token constant">default</span> <span class="token attr-value"><span class="token punctuation">=</span> True</span>
+<span class="token constant">auto</span> <span class="token attr-value"><span class="token punctuation">=</span> no</span>
+<span class="token constant">counter</span> <span class="token attr-value"><span class="token punctuation">=</span> 1_000</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              Article License: 
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="https://halyul.github.io/posts/code-highlight/">https://halyul.github.io/posts/code-highlight/</a></span>
+            
+              <br />
+              <span>Article Markdown: <a href="https://halyul.github.io/posts/code-highlight/code-highlight.md">https://halyul.github.io/posts/code-highlight/code-highlight.md</a></span>
+            
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-spacer mdui-hidden-xs"></div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      
+        <a href="/posts/markdown/" class="theme-post__pagination__next__content mdui-text-right">
+        
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Older Post</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          Markdown Style test
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">Buy me a beer?</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1571483049000
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>Halyul</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+
+
+</body>
+</html>

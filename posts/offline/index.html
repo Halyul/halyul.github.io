@@ -4,7 +4,7 @@
 
 
 
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <script>
     window.themeRuntime = {
       root: "/",
@@ -16,7 +16,7 @@
         status: false
       },
       versions: {
-        theme: "2.0.3",
+        theme: "2.1.0",
         mdui: "0.4.0",
         fetch: "3.0.0",
         es6promise: "4.2.5+7f2b526d",
@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>这里离线不能访问啦！ - Halyul的博客</title>
+  <title>这里离线不能访问啦！ - Demo Blog</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -53,7 +53,7 @@
   <meta name="keywords" content="blog, hexo, mdui">
 
   <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -63,9 +63,9 @@
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- The Open Graph protocol -->
-  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:url" content="https://halyul.github.io">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="这里离线不能访问啦！ - Halyul的博客 | Halyul的博客">
+  <meta property="og:title" content="这里离线不能访问啦！ - Demo Blog | Demo Blog">
   <meta property="og:image" content="/images/favicon.png">
   
     <meta property="og:description" content="Never do a dreamer.">
@@ -231,9 +231,14 @@
         </i>
       </a>
     
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
   </div>
   <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
     
       <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
         <i class="mdui-icon material-icons">&#xe8b6;</i>
@@ -259,11 +264,11 @@
       
     </div>
     <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
     </div>
   </div>
   <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
     <div class="theme-drawer__header__layer-2__user__info">
       <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
         Halyul
@@ -287,7 +292,7 @@
       <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
       <div class="mdui-list-item-content">Archives</div>
     </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
@@ -297,34 +302,52 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
               <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 杂
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 技术
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
               </a>
             
               <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Document
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
           </div>
@@ -342,31 +365,49 @@
               <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Hexo
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
               </a>
             
               <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Android
                 <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
                 <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 教程
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
               </a>
             
           </div>
@@ -397,13 +438,21 @@
               2016
             </a>
           
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+            <a href="/archives/1970/" class="mdui-list-item mdui-ripple">
+              1970
+            </a>
+          
         </div>
       </div>
     </ul>
   </ul>
   
     <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
       
         
           
@@ -482,19 +531,19 @@
     <div class="theme-drawer__warpper__footer">
   <div class="mdui-typo mdui-typo-caption-opacity">
     Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
+    <br />
     Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
+    <br />
     <span>
       Copyright ©
-      <span year=""></span>
+      <span year></span>
       Halyul
     </span>
     
     
-      <br>
+      <br />
       <span>
-        Last Updated: Jan 12, 2019
+        Last Updated: May 22, 2020
       </span>
     
     
@@ -537,7 +586,7 @@
     <div class="theme-post__header__actions mdui-valign">
       <div>
         <span>Posted: </span>
-        <span style="float: right">Dec 25, 2018</span>
+        <span style="float: right">Jan 01, 1970</span>
         
         <br>
           <span>Last Modified: </span>
@@ -553,7 +602,7 @@
       <li class="mdui-list-item" style="cursor: auto">
         Article QR Code
       </li>
-        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACYUlEQVR42u3aUa7CMAwEQO5/6fcOgChrx4lKNf1CCNJOP+Jo7dffo68XHh4eHh4eHh7ezXiv+Pr0r0/fJHd5/83As+Hh4eEd4X3ZauPfrLyg93v1ng0PDw/vJO/TA11/vmb0Vu49Gx4eHt79edV11u+Lh4eH9yReXkKuy8ZNCwMeHh7eQhiRRww/mbXg4eHhxbw8hD3/+Wh/Dw8PDy/glUeaFjb9/Ag+NnSFh4eHt4GXb8TV0CEJc5OgobwaHh4e3mbeVJjba3RdR735N3h4eHgneStBwJc4Nf4mfzXRv/Dw8PA281baYFNNsnz9gbqHh4eHN8pbv3GvDOTH6CT2xcPDw9vNS46zvdi32iSLNv3gYI2Hh4e3m5eUh6R9lR/Q14/O5TACDw8Pb5SXH53zslEF5AfogckIPDw8vCFePvCUR735OtWRgi93xMPDwzvIK7eaimNS5QedGrrCw8PD28ZLjtdRkFokDZcKPDw8vM286hG5d+DuFYwkVi40wPDw8PBGecnWnwNmhwbGZsrw8PDwhnj5UbXa7qqunLyIZoyLh4eHt41XjRuSkpAfl6svtFwY8PDw8A7yesMBvVGDgVKBh4eHd5CXL9eLJxLGysvCw8PDO8OrXr1GVy/CyINmPDw8vJO8XpRQbVz1CkAvFMbDw8M7w8uLQXWwoPpqqmNe5QYYHh4e3iivukGXt+zlUDhqzuHh4eH9FG9HwagWEjw8PLx78maP0SuDAuX+Hh4eHt4ob6rptT4WsDLeioeHh3eG14sAeqFDdc1y+cHDw8PbzHvehYeHh4eHh4eHd4PrH4CkXcm2mgzBAAAAAElFTkSuQmCC" style="cursor: auto">
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACaElEQVR42u3aUW6EMAwFwL3/pdsDtLDPdpLS1fCFEGUzqeRYtl9fH3298PDw8PDw8PDwHsZ7xdcvHwqe/7zPv9ZbGx4eHt4Z3ptQ23onedJ7/uZX8PDw8A7yrgLu/TtX718G7osvJwfM/drw8PDwnsyrMiYpOB4eHt5n8JJw38Pj4eHh/S9entpOSrT3f5Un3Hh4eHh/y8ubTOfvj/b38PDw8AJeeaSpOFIwT7XLK8TDw8PbzKs2t3oDBEmiXB26wsPDw3sCr9qmygP92sLuqIyLh4eHt4iXjE8l29Fj3yfu5ZIxHh4e3hFeUkroFRfyEJ+MCCw+9/Dw8PAGvN7P5Ow8Qc+/Vj738PDw8Bbx8oLs2uGq6hYXWmh4eHh4m3l5oJ8fDMl9sh3Lzj08PDy8Fi9f9P1H82R6cvyURwfw8PDwNvCSltV8mGBVsTjZIDw8PLzdvHnQrzIKraz50BUeHh7ecV51+Kk3sNVrfZUbYHh4eHiLeL1GV69cWy1GNJN1PDw8vM28vOmVIyfF2eqgKh4eHt55XtKmmoTs6kBVtf2Gh4eH9wReErirAwHVdtfGYgQeHh7etjrnPIHONyvfsihxx8PDwzvIq6a/+TDrfLwg/zfg4eHh7eZVr3xstLfcvCUWFSPw8PDwNvB6RdjqsVHF50WK6NzDw8PD28CrNr16i5ukzotnyvDw8PAW8eYBelKizQ+qNwURPDw8vH/Cy9l5iytvpOHh4eE9n5cMUfWKtgu2CQ8PD+8gr9f0mhd/q8MKeHh4eE/gTUoA1ZJEvvTmkAEeHh7eZt7nXXh4eHh4eHh4eA+4vgH3FV3JI0RD4wAAAABJRU5ErkJggg==" style="cursor: auto">
     </ul>
   </div>
 
@@ -568,7 +617,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.halyul.com//posts/offline/index.html" target="_blank" class="mdui-ripple">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://halyul.github.io//posts/offline/index.html" target="_blank" class="mdui-ripple">
                 Share to Facebook
             </a>
         </li>
@@ -576,7 +625,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="https://plus.google.com/share?url=https://blog.halyul.com//posts/offline/index.html" target="_blank" class="mdui-ripple">
+            <a href="https://plus.google.com/share?url=https://halyul.github.io//posts/offline/index.html" target="_blank" class="mdui-ripple">
                 Share to Google+
             </a>
         </li>
@@ -584,7 +633,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.halyul.com//posts/offline/index.html&title=这里离线不能访问啦！" target="_blank" class="mdui-ripple">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://halyul.github.io//posts/offline/index.html&title=这里离线不能访问啦！" target="_blank" class="mdui-ripple">
                 Share to Linkedin
             </a>
         </li>
@@ -596,7 +645,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="https://twitter.com/intent/tweet?text=这里离线不能访问啦！&url=https://blog.halyul.com//posts/offline/index.html&via=Halyul" target="_blank" class="mdui-ripple">
+            <a href="https://twitter.com/intent/tweet?text=这里离线不能访问啦！&url=https://halyul.github.io//posts/offline/index.html&via=Halyul" target="_blank" class="mdui-ripple">
                 Share to Twitter
             </a>
         </li>
@@ -626,7 +675,7 @@
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/8.png">
+            <img src="/images/random/13.png"/>
           </section>
         
         <section class="mdui-typo theme-post__card__content">
@@ -642,11 +691,11 @@
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
               
             </span>
-            <br>
-            <span>Article Permalink: <a href="https://blog.halyul.com/posts/offline/">https://blog.halyul.com/posts/offline/</a></span>
+            <br />
+            <span>Article Permalink: <a href="https://halyul.github.io/posts/offline/">https://halyul.github.io/posts/offline/</a></span>
             
-              <br>
-              <span>Article Markdown: <a href="https://blog.halyul.com/posts/offline/offline.md">https://blog.halyul.com/posts/offline/offline.md</a></span>
+              <br />
+              <span>Article Markdown: <a href="https://halyul.github.io/posts/offline/offline.md">https://halyul.github.io/posts/offline/offline.md</a></span>
             
           </section>
         
@@ -686,30 +735,22 @@
     <div class="theme-post__pagination mdui-color-theme">
   
     <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
-      <a href="/posts/offline (copy)/" class="theme-post__pagination__prev__content mdui-text-left">
+      
+        <a href="/posts/hello-world/" class="theme-post__pagination__prev__content mdui-text-left">
+        
         <div>
           <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
           <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
         </div>
         <div class="mdui-typo-title mdui-text-truncate">
-          这里离线不能访问啦！
+          Hello World
         </div>
       </a>
     </div>
   
 
   
-    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
-      <a href="/posts/table (copy)/" class="theme-post__pagination__next__content mdui-text-right">
-        <div>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">Older Post</span>
-          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
-        </div>
-        <div class="mdui-typo-title mdui-text-truncate">
-          table
-        </div>
-      </a>
-    </div>
+      <div class="theme-spacer mdui-hidden-xs"></div>
     
 </div>
 
@@ -742,7 +783,7 @@
         </div>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close="">Cancel</button>
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
       </div>
     </div>
   
@@ -900,6 +941,42 @@
     appbarShadow()
     window.addEventListener('scroll', appbarShadow);
   })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
 </script>
 
 
@@ -912,10 +989,6 @@
 </script>
 
 
-  <script type="text/javascript">
-    mdui.alert("This site and its content are for demo only! If the site reloaded, you will see this alert again.", "Demo Alert", function(){},{history:false})
-    console.warn("This site is for demo only!")
-  </script>
 
 
 </body>

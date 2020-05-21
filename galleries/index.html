@@ -4,7 +4,7 @@
 
 
 
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <script>
     window.themeRuntime = {
       root: "/",
@@ -16,7 +16,7 @@
         status: false
       },
       versions: {
-        theme: "2.0.3",
+        theme: "2.1.0",
         mdui: "0.4.0",
         fetch: "3.0.0",
         es6promise: "4.2.5+7f2b526d",
@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>TEST GALLERY 1 - Halyul的博客</title>
+  <title>TEST GALLERY 1 - Demo Blog</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -53,7 +53,7 @@
   <meta name="keywords" content="blog, hexo, mdui">
 
   <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -63,9 +63,9 @@
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- The Open Graph protocol -->
-  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:url" content="https://halyul.github.io">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="TEST GALLERY 1 - Halyul的博客 | Halyul的博客">
+  <meta property="og:title" content="TEST GALLERY 1 - Demo Blog | Demo Blog">
   <meta property="og:image" content="/images/favicon.png">
   
     <meta property="og:description" content="Never do a dreamer.">
@@ -231,9 +231,14 @@
         </i>
       </a>
     
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
   </div>
   <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
     
       <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
         <i class="mdui-icon material-icons">&#xe8b6;</i>
@@ -259,11 +264,11 @@
       
     </div>
     <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
     </div>
   </div>
   <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
     <div class="theme-drawer__header__layer-2__user__info">
       <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
         Halyul
@@ -287,7 +292,7 @@
       <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
       <div class="mdui-list-item-content">Archives</div>
     </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
@@ -297,34 +302,52 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
               <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 杂
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 技术
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
               </a>
             
               <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Document
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
           </div>
@@ -342,31 +365,49 @@
               <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Hexo
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
               </a>
             
               <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Android
                 <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
                 <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 教程
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
               </a>
             
           </div>
@@ -397,13 +438,21 @@
               2016
             </a>
           
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+            <a href="/archives/1969/" class="mdui-list-item mdui-ripple">
+              1969
+            </a>
+          
         </div>
       </div>
     </ul>
   </ul>
   
     <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
       
         
           
@@ -482,19 +531,19 @@
     <div class="theme-drawer__warpper__footer">
   <div class="mdui-typo mdui-typo-caption-opacity">
     Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
+    <br />
     Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
+    <br />
     <span>
       Copyright ©
-      <span year=""></span>
+      <span year></span>
       Halyul
     </span>
     
     
-      <br>
+      <br />
       <span>
-        Last Updated: Jan 12, 2019
+        Last Updated: May 22, 2020
       </span>
     
     
@@ -526,11 +575,11 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="/galleries/ca.html" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
-                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADzUExURUxpcT5DQ/vPz9vd3f++vv+srPr6+vv8/EBBQf////7///v9/f/T0/z//8LHx4CCgvz5+e709P/////+/v+1tdne3v////Tg4P///8fR0fX6+o6Ojv/5+f3r6//////5+f27u/7Hx////////6Wlpers7Ozt7fPz8+rq6jg4OPT09Pzb2//7+////7u+vvvz8/8zM/////8AAP8wMP/w8P/09P9fX/9YWP8uLv8ODv8XF//9/f/y8v83N/8mJv8gIP+Jif86Ov/Kyv/r6/9GRv8ICP+/v/98fP+Skv+Xl//4+P/Z2f9SUv+jo/9lZf9vb/8/P8FcuGYAAAAwdFJOUwAE75Ty/eUMC/U+FuMlXi2ZN0i6/oEE1XopXj6qzU6y9+9EgkKVndi7FtrdoW4P8WU/2bkAAAJdSURBVDjLfdUJc6IwFABgDhHEA896rNaj7fbazqTgQYKcIopX+/9/zQYQBBHfjCOZfPNCnsmTIJLBlvn642OdL7PEnWD5p0a+4Ee+8cRnWbbXKHzHotDo3aIPk2GCBXTykErXoYzpNVwa485V0mKV0cAqBU2dqRYTrr+F8JDKOFsguB3GJFvdQiQv0nAuY1m9rP7VRAhIt6AEEGQ6oauVJChlQYC0En9euP+zlkEmlNenYbB4PYd0kA2BjkaPfqX/zaGUgKtVAkpw0ffqXi7pXsILVAxDiUOcclzztux6bxhBxXJs27GUGJTX7heGeGUQz2iYAJhGPCPw1y4OVBRB5Xs6Y7xnZucNQojAoBi9ogeVo7sxHC+jY2zcoxJCDZXKRC0HtSjjUZbUE4bqXJVkN8qowdwEV3F9gYyKv/0B/jBxWCcmMbgzQCyMXQLipS+bWbpmMAUkc7uMygPXOZ4of+oiin6ZXdMOpN3cheWRoajjzbCDX1FE0aFQNqqNQ90oYR01KIomLg9R/RFFEe/8DC1r7zh7yzpDSV/j6VOVJIge4z2KSIsOxX4fHQodenPisYd/wu6n7A9EMzw0lhVert9gRit1MSRfNsFQTsGpGsxs/pL+TaC0JFSUJNSpmn/CyRcjCaM4QyNIiN+yfbgH7XY3vIYVSsqGGlWJ7jXZGstZUBu1uEur4Fo56TaURzQXbz5cizqkm9TUPFAtLtnOuEq7OUvd62a7wl03SFKg89cwTwvkjZ7LPdOvsaZbeKWfuYwuzgkV+u0jj+Pjja4I3L0/Bu5d+INDeL9W/wGVhuZVu52eMwAAAABJRU5ErkJggg==">
+                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADzUExURUxpcT5DQ/vPz9vd3f++vv+srPr6+vv8/EBBQf////7///v9/f/T0/z//8LHx4CCgvz5+e709P/////+/v+1tdne3v////Tg4P///8fR0fX6+o6Ojv/5+f3r6//////5+f27u/7Hx////////6Wlpers7Ozt7fPz8+rq6jg4OPT09Pzb2//7+////7u+vvvz8/8zM/////8AAP8wMP/w8P/09P9fX/9YWP8uLv8ODv8XF//9/f/y8v83N/8mJv8gIP+Jif86Ov/Kyv/r6/9GRv8ICP+/v/98fP+Skv+Xl//4+P/Z2f9SUv+jo/9lZf9vb/8/P8FcuGYAAAAwdFJOUwAE75Ty/eUMC/U+FuMlXi2ZN0i6/oEE1XopXj6qzU6y9+9EgkKVndi7FtrdoW4P8WU/2bkAAAJdSURBVDjLfdUJc6IwFABgDhHEA896rNaj7fbazqTgQYKcIopX+/9/zQYQBBHfjCOZfPNCnsmTIJLBlvn642OdL7PEnWD5p0a+4Ee+8cRnWbbXKHzHotDo3aIPk2GCBXTykErXoYzpNVwa485V0mKV0cAqBU2dqRYTrr+F8JDKOFsguB3GJFvdQiQv0nAuY1m9rP7VRAhIt6AEEGQ6oauVJChlQYC0En9euP+zlkEmlNenYbB4PYd0kA2BjkaPfqX/zaGUgKtVAkpw0ffqXi7pXsILVAxDiUOcclzztux6bxhBxXJs27GUGJTX7heGeGUQz2iYAJhGPCPw1y4OVBRB5Xs6Y7xnZucNQojAoBi9ogeVo7sxHC+jY2zcoxJCDZXKRC0HtSjjUZbUE4bqXJVkN8qowdwEV3F9gYyKv/0B/jBxWCcmMbgzQCyMXQLipS+bWbpmMAUkc7uMygPXOZ4of+oiin6ZXdMOpN3cheWRoajjzbCDX1FE0aFQNqqNQ90oYR01KIomLg9R/RFFEe/8DC1r7zh7yzpDSV/j6VOVJIge4z2KSIsOxX4fHQodenPisYd/wu6n7A9EMzw0lhVert9gRit1MSRfNsFQTsGpGsxs/pL+TaC0JFSUJNSpmn/CyRcjCaM4QyNIiN+yfbgH7XY3vIYVSsqGGlWJ7jXZGstZUBu1uEur4Fo56TaURzQXbz5cizqkm9TUPFAtLtnOuEq7OUvd62a7wl03SFKg89cwTwvkjZ7LPdOvsaZbeKWfuYwuzgkV+u0jj+Pjja4I3L0/Bu5d+INDeL9W/wGVhuZVu52eMwAAAABJRU5ErkJggg=="/>
                     
                     <div class="mdui-grid-tile-title theme-galleries__container__tile-title">加拿大游学</div>
                     <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">应该上传少了 至于少了那些我也不知道了</div>
@@ -543,11 +592,11 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="/galleries/jp.html" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg">
+                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
-                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADkUExURUxpcf////////f39/////r6+v///////0RERPv7+/////7+/v7+/t/f3////////4aGhpKSkvr6+rq6uv39/f///97e3v////7+/sfHx9zc3F5eXu3t7dvb2/39/f////z8/Pf39/7+/v///////+Hh4erq6u7u7vPz88bGxuzs7P///8kzV////8kxVbwAK/77/MgsUc1AYvvu8cUjSr4HM9+CmdBLa/fh5vPP2M9IafTV3NNXdf3198s5XNpxi9JScfjl6umtvO/Ezu6+yfbc4uKPo8MYQfno7OSbrNRdethrhUWQpXIAAAAsdFJOUwBIB93+DOz5C+V3MiAdOdwyPe5BoLB39bhZmhgrifNejs5CrJWgkadVa8MTdZe9XAAAAfxJREFUOMuFlYlygjAURREEIlrFfatWq3abEhGQ1a22amv//38aNQkgwd4ZZ8Cc4b4b8h4cFxdfKGaQigWRuyE+r9RLUhNJKrWUYhorZkZSVgvVbz0w0fyoqV1Jbj0mXZWcxpCkXD1UHDQ1puTaXYwby1qKsvUIyQ9SOaRa6P4Q8dVN1/M+zEh8WaF5S/TP5Ze98FeGf7Q9PUyEs/M1Wk+wXkEI39EPGvaOkvWLeVEirlsfvhNBuPmk5i9ncEzut0bInVCfknUecQVSYeDHOERuXFJl/hQZB1yurzhE2iSREnH+XCVBI8CLI54ThzixneAQ+YPBUoGWaC5Y4K9Oi7zHp+bDYYEb87LazNBdDAwW6HxTMI/B3X/gbesFsX6kYZZHFrjGYXL3nNjCO7BngVu8KKDTO8DXXrJI6JB3WENv5gWfbp2x42S/sw0E3gn4znVm8dMzO+IopxKRnshh+rLmB8uanWVZh/nKIyvP4ARWK5SE0+l0fha6MCjXb1964Yl2krs+TLEs+1uLPxBVOQx7MNg7yBZu9ruwD4UqacN2RYv1q2vq0WHVoH0NGv30/pd7IBwVoJdKypNudPiARoXN9Xvd+DgD7WGWwQmvIDEh1U5iQlYmZdbIBdWOEJlWstCpgpQpDtR2503IIQlvk1cV3PowgK5aRlK719Qfk3/LUMwtkHwAAAAASUVORK5CYII=">
+                      <img class="mdui-img-circle theme-galleries__container__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADkUExURUxpcf////////f39/////r6+v///////0RERPv7+/////7+/v7+/t/f3////////4aGhpKSkvr6+rq6uv39/f///97e3v////7+/sfHx9zc3F5eXu3t7dvb2/39/f////z8/Pf39/7+/v///////+Hh4erq6u7u7vPz88bGxuzs7P///8kzV////8kxVbwAK/77/MgsUc1AYvvu8cUjSr4HM9+CmdBLa/fh5vPP2M9IafTV3NNXdf3198s5XNpxi9JScfjl6umtvO/Ezu6+yfbc4uKPo8MYQfno7OSbrNRdethrhUWQpXIAAAAsdFJOUwBIB93+DOz5C+V3MiAdOdwyPe5BoLB39bhZmhgrifNejs5CrJWgkadVa8MTdZe9XAAAAfxJREFUOMuFlYlygjAURREEIlrFfatWq3abEhGQ1a22amv//38aNQkgwd4ZZ8Cc4b4b8h4cFxdfKGaQigWRuyE+r9RLUhNJKrWUYhorZkZSVgvVbz0w0fyoqV1Jbj0mXZWcxpCkXD1UHDQ1puTaXYwby1qKsvUIyQ9SOaRa6P4Q8dVN1/M+zEh8WaF5S/TP5Ze98FeGf7Q9PUyEs/M1Wk+wXkEI39EPGvaOkvWLeVEirlsfvhNBuPmk5i9ncEzut0bInVCfknUecQVSYeDHOERuXFJl/hQZB1yurzhE2iSREnH+XCVBI8CLI54ThzixneAQ+YPBUoGWaC5Y4K9Oi7zHp+bDYYEb87LazNBdDAwW6HxTMI/B3X/gbesFsX6kYZZHFrjGYXL3nNjCO7BngVu8KKDTO8DXXrJI6JB3WENv5gWfbp2x42S/sw0E3gn4znVm8dMzO+IopxKRnshh+rLmB8uanWVZh/nKIyvP4ARWK5SE0+l0fha6MCjXb1964Yl2krs+TLEs+1uLPxBVOQx7MNg7yBZu9ruwD4UqacN2RYv1q2vq0WHVoH0NGv30/pd7IBwVoJdKypNudPiARoXN9Xvd+DgD7WGWwQmvIDEh1U5iQlYmZdbIBdWOEJlWstCpgpQpDtR2503IIQlvk1cV3PowgK5aRlK719Qfk3/LUMwtkHwAAAAASUVORK5CYII="/>
                     
                     <div class="mdui-grid-tile-title theme-galleries__container__tile-title">日本之旅</div>
                     <div class="mdui-grid-tile-subtitle mdui-text-color-white-secondary theme-galleries__container__tile-subtitle">我没有将照片备份 然后因为刷机的缘故原图全部丢失 这些都是从微信朋友圈备份下来的 大部分经过PS加持</div>
@@ -560,7 +609,7 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="https://img.halyul.com/album/AxS" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg">
+                <img class="theme-galleries__container__bg" src="http://img4.imgtn.bdimg.com/it/u=4101825615,2015485109&amp;fm=23&amp;gp=0.jpg" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
@@ -575,7 +624,7 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
@@ -590,7 +639,7 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
@@ -605,7 +654,7 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
@@ -620,7 +669,7 @@
           <div class="mdui-col-xs-6 mdui-col-md-3">
             <a href="https://img.halyul.com/album/C6e" target="_self" class="theme-galleries__container__item">
               <div class="mdui-grid-tile theme-galleries__container__tile">
-                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768">
+                <img class="theme-galleries__container__bg" src="http://img5.hao123.com/data/desktop/00472c1e511555b7503c7acc33c88548_1366_768" />
                 <div class="mdui-grid-tile-actions" style="width: 100%; max-height: none; padding-top: 0;">
                   <div class="mdui-grid-tile-text" style="width: 100%; overflow: visible;">
                     
@@ -717,6 +766,42 @@
     appbarShadow()
     window.addEventListener('scroll', appbarShadow);
   })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
 </script>
 
 
@@ -729,10 +814,6 @@
 </script>
 
 
-  <script type="text/javascript">
-    mdui.alert("This site and its content are for demo only! If the site reloaded, you will see this alert again.", "Demo Alert", function(){},{history:false})
-    console.warn("This site is for demo only!")
-  </script>
 
 
 </body>

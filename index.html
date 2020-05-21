@@ -4,7 +4,7 @@
 
 
 
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <script>
     window.themeRuntime = {
       root: "/",
@@ -16,7 +16,7 @@
         status: false
       },
       versions: {
-        theme: "2.0.3",
+        theme: "2.1.0",
         mdui: "0.4.0",
         fetch: "3.0.0",
         es6promise: "4.2.5+7f2b526d",
@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>Index - Halyul的博客</title>
+  <title>Index - Demo Blog</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -53,7 +53,7 @@
   <meta name="keywords" content="blog, hexo, mdui">
 
   <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -63,9 +63,9 @@
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- The Open Graph protocol -->
-  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:url" content="https://halyul.github.io">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Index - Halyul的博客 | Halyul的博客">
+  <meta property="og:title" content="Index - Demo Blog | Demo Blog">
   <meta property="og:image" content="/images/favicon.png">
   
     <meta property="og:description" content="Never do a dreamer.">
@@ -231,9 +231,14 @@
         </i>
       </a>
     
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
   </div>
   <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
     
       <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
         <i class="mdui-icon material-icons">&#xe8b6;</i>
@@ -251,7 +256,7 @@
   <div class="theme-drawer__header__layer-1">
     <div class="mdui-toolbar theme-toolbar-top">
       
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer" id="drawer-back">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer"  id="drawer-back">
           <i class="mdui-icon">
             <span></span>
           </i>
@@ -259,11 +264,11 @@
       
     </div>
     <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
     </div>
   </div>
   <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
     <div class="theme-drawer__header__layer-2__user__info">
       <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
         Halyul
@@ -287,7 +292,7 @@
       <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
       <div class="mdui-list-item-content">Archives</div>
     </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
@@ -297,34 +302,52 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
               <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 杂
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 技术
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
               </a>
             
               <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Document
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
           </div>
@@ -342,31 +365,49 @@
               <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Hexo
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
               </a>
             
               <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Android
                 <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
                 <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 教程
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
               </a>
             
           </div>
@@ -397,13 +438,21 @@
               2016
             </a>
           
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+            <a href="/archives/1970/" class="mdui-list-item mdui-ripple">
+              1970
+            </a>
+          
         </div>
       </div>
     </ul>
   </ul>
   
     <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
       
         
           
@@ -482,19 +531,19 @@
     <div class="theme-drawer__warpper__footer">
   <div class="mdui-typo mdui-typo-caption-opacity">
     Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
+    <br />
     Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
+    <br />
     <span>
       Copyright ©
-      <span year=""></span>
+      <span year></span>
       Halyul
     </span>
     
     
-      <br>
+      <br />
       <span>
-        Last Updated: Jan 12, 2019
+        Last Updated: May 22, 2020
       </span>
     
     
@@ -525,112 +574,37 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/4.png)">
-        <img src="/images/random/4.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/11.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/mdui-doc-en (copy)/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/mdui-doc-en/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
                 <span style="color: #D50000">[Pinned] </span>
               
-              hexo-theme-mdui document English version
+                hexo-theme-mdui document English version
             </a>
           </div>
         </div>
+        
       </section>
       <section class="mdui-card-content">
         This is hexo-theme-mdui document English version
-...
+
+
+
       </section>
       <div class="mdui-divider" style="margin: 0 16px;"></div>
       <section class="theme-posts__post__footer">
         
           
             <div class="theme-posts__post__footer__categories mdui-valign">
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-categories-0'}">
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-categories-1-0'}">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
               </button>
-              <ul class="mdui-menu" id="post-categories-0">
-                
-                  <li class="mdui-menu-item">
-                    <a href="/categories/Document/" class="mdui-ripple">
-                      <span>Document</span>
-                    </a>
-                  </li>
-                
-                  <li class="mdui-menu-item">
-                    <a href="/categories/Document/xxx/" class="mdui-ripple">
-                      <span>xxx</span>
-                    </a>
-                  </li>
-                
-                  <li class="mdui-menu-item">
-                    <a href="/categories/Document/xxx/xx/" class="mdui-ripple">
-                      <span>xx</span>
-                    </a>
-                  </li>
-                
-              </ul>
-            </div>
-          
-        
-        
-          
-            
-              <a href="/tags/Hexo/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__tags">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon fa fa-tags mdui-text-center"></i>
-                  </span>
-                  <span class="mdui-chip-title">Hexo</span>
-                </div>
-              </a>
-            
-          
-        
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            Mar 23, 2017
-          </div>
-        </div>
-      </section>
-    </article>
-  </div>
-
-
-    
-      
-
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/36.png)">
-        <img src="/images/random/36.png" class="theme-posts__post__media__image">
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/mdui-doc-en/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-              
-                <span style="color: #D50000">[Pinned] </span>
-              
-              hexo-theme-mdui document English version
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="mdui-card-content">
-        This is hexo-theme-mdui document English version
-...
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
-        
-          
-            <div class="theme-posts__post__footer__categories mdui-valign">
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-categories-1'}">
-                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
-              </button>
-              <ul class="mdui-menu" id="post-categories-1">
+              <ul class="mdui-menu" id="post-categories-1-0">
                 
                   <li class="mdui-menu-item">
                     <a href="/categories/Document/" class="mdui-ripple">
@@ -686,20 +660,22 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/37.png)">
-        <img src="/images/random/37.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/10.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/offline (copy)/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/code-highlight/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              这里离线不能访问啦！
+                Code Highlight Style test
             </a>
           </div>
         </div>
+        
       </section>
       <section class="mdui-card-content">
-        老哥！你现在已经掉线啦！赶紧接回网线再看这个神奇的页面吧！
-
+        Make sure all the code blocks highlighted correctly. All the code samples ...
       </section>
       <div class="mdui-divider" style="margin: 0 16px;"></div>
       <section class="theme-posts__post__footer">
@@ -708,7 +684,7 @@
         <div class="theme-spacer"></div>
         <div class="mdui-valign">
           <div>
-            Jan 11, 2019
+            Jul 25, 2019
           </div>
         </div>
       </section>
@@ -722,29 +698,54 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/28.png)">
-        <img src="/images/random/28.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/28.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/offline/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/markdown/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              这里离线不能访问啦！
+                Markdown Style test
             </a>
           </div>
         </div>
+        
       </section>
       <section class="mdui-card-content">
-        老哥！你现在已经掉线啦！赶紧接回网线再看这个神奇的页面吧！
-
+        This post is originated from 
       </section>
       <div class="mdui-divider" style="margin: 0 16px;"></div>
       <section class="theme-posts__post__footer">
         
         
+          
+            <div class="theme-posts__post__footer__tags mdui-valign">
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-1-2'}">
+                <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+              </button>
+              <ul class="mdui-menu" id="post-tags-1-2">
+                
+                  <li class="mdui-menu-item">
+                    <a href="/tags/Foo/" class="mdui-ripple">
+                      <span>Foo</span>
+                    </a>
+                  </li>
+                
+                  <li class="mdui-menu-item">
+                    <a href="/tags/Bar/" class="mdui-ripple">
+                      <span>Bar</span>
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+        
         <div class="theme-spacer"></div>
         <div class="mdui-valign">
           <div>
-            Dec 25, 2018
+            Jul 24, 2018
           </div>
         </div>
       </section>
@@ -758,51 +759,19 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(aaaaaaa)">
-        <img src="aaaaaaa" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(aaaaaaa)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/table (copy)/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/table/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              table
+                table
             </a>
           </div>
         </div>
-      </section>
-      <section class="mdui-card-content">
-        Donat...
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
         
-        
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            Sep 01, 2017
-          </div>
-        </div>
-      </section>
-    </article>
-  </div>
-
-
-    
-      
-
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(aaaaaaa)">
-        <img src="aaaaaaa" class="theme-posts__post__media__image">
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/table/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-              
-              table
-            </a>
-          </div>
-        </div>
       </section>
       <section class="mdui-card-content">
         Donat...
@@ -828,16 +797,19 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/9.png)">
-        <img src="/images/random/9.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/43.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/short (copy)/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/short/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              fkshort
+                fkshort
             </a>
           </div>
         </div>
+        
       </section>
       <section class="mdui-card-content">
         fkshort
@@ -864,55 +836,24 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/43.png)">
-        <img src="/images/random/43.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/4.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/short/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/hexo-module-not-found/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              fkshort
+                解决Hexo MODULE NOT FOUND问题
             </a>
           </div>
         </div>
-      </section>
-      <section class="mdui-card-content">
-        fkshort
-
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
         
-        
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            Jul 01, 2017
-          </div>
-        </div>
-      </section>
-    </article>
-  </div>
-
-
-    
-      
-
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/19.png)">
-        <img src="/images/random/19.png" class="theme-posts__post__media__image">
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/hexo-module-not-found (copy)/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-              
-              解决Hexo MODULE NOT FOUND问题
-            </a>
-          </div>
-        </div>
       </section>
       <section class="mdui-card-content">
         Hexo上最玄学的问题，没有之一
+
+
 
       </section>
       <div class="mdui-divider" style="margin: 0 16px;"></div>
@@ -934,10 +875,10 @@
         
           
             <div class="theme-posts__post__footer__tags mdui-valign">
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-8'}">
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-1-5'}">
                 <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
               </button>
-              <ul class="mdui-menu" id="post-tags-8">
+              <ul class="mdui-menu" id="post-tags-1-5">
                 
                   <li class="mdui-menu-item">
                     <a href="/tags/Hexo/" class="mdui-ripple">
@@ -978,19 +919,91 @@
 
   <div class="theme-posts__post">
     <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/39.png)">
-        <img src="/images/random/39.png" class="theme-posts__post__media__image">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/4.png)">
+        
         <div class="mdui-card-media-covered theme-posts__post__media-covered">
           <div class="mdui-card-primary mdui-typo">
-            <a href="/posts/hexo-module-not-found/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              <a href="/posts/imporve-ssl/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
               
-              解决Hexo MODULE NOT FOUND问题
+                失踪人口回归系列之增强站点SSL安全性
             </a>
           </div>
         </div>
+        
       </section>
       <section class="mdui-card-content">
-        Hexo上最玄学的问题，没有之一
+        失踪人口回归系列之第二篇
+
+
+经过这篇文章后，我的SSL Lab的测试也是A+了。
+...
+      </section>
+      <div class="mdui-divider" style="margin: 0 16px;"></div>
+      <section class="theme-posts__post__footer">
+        
+          
+            
+              <a href="/categories/技术/" class="theme-link--no-style">
+                <div class="mdui-chip theme-posts__post__footer__categories">
+                  <span class="mdui-chip-icon">
+                    <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
+                  </span>
+                  <span class="mdui-chip-title">技术</span>
+                </div>
+              </a>
+            
+          
+        
+        
+          
+            
+              <a href="/tags/教程/" class="theme-link--no-style">
+                <div class="mdui-chip theme-posts__post__footer__tags">
+                  <span class="mdui-chip-icon">
+                    <i class="mdui-icon fa fa-tags mdui-text-center"></i>
+                  </span>
+                  <span class="mdui-chip-title">教程</span>
+                </div>
+              </a>
+            
+          
+        
+        <div class="theme-spacer"></div>
+        <div class="mdui-valign">
+          <div>
+            Mar 22, 2017
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+
+    
+      
+
+
+  <div class="theme-posts__post">
+    <article class="mdui-card mdui-hoverable">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/43.png)">
+        
+        <div class="mdui-card-media-covered theme-posts__post__media-covered">
+          <div class="mdui-card-primary mdui-typo">
+            
+              <a href="/posts/vps-hexo/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              
+                失踪人口回归系列之在VPS上搭建HEXO的GIT部署环境
+            </a>
+          </div>
+        </div>
+        
+      </section>
+      <section class="mdui-card-content">
+        失踪人口回归系列之第一篇
+
 
       </section>
       <div class="mdui-divider" style="margin: 0 16px;"></div>
@@ -998,12 +1011,12 @@
         
           
             
-              <a href="/categories/杂/" class="theme-link--no-style">
+              <a href="/categories/技术/" class="theme-link--no-style">
                 <div class="mdui-chip theme-posts__post__footer__categories">
                   <span class="mdui-chip-icon">
                     <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
                   </span>
-                  <span class="mdui-chip-title">杂</span>
+                  <span class="mdui-chip-title">技术</span>
                 </div>
               </a>
             
@@ -1012,10 +1025,10 @@
         
           
             <div class="theme-posts__post__footer__tags mdui-valign">
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-9'}">
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-1-7'}">
                 <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
               </button>
-              <ul class="mdui-menu" id="post-tags-9">
+              <ul class="mdui-menu" id="post-tags-1-7">
                 
                   <li class="mdui-menu-item">
                     <a href="/tags/Hexo/" class="mdui-ripple">
@@ -1024,14 +1037,8 @@
                   </li>
                 
                   <li class="mdui-menu-item">
-                    <a href="/tags/xxx/" class="mdui-ripple">
-                      <span>xxx</span>
-                    </a>
-                  </li>
-                
-                  <li class="mdui-menu-item">
-                    <a href="/tags/xx/" class="mdui-ripple">
-                      <span>xx</span>
+                    <a href="/tags/教程/" class="mdui-ripple">
+                      <span>教程</span>
                     </a>
                   </li>
                 
@@ -1043,6 +1050,112 @@
         <div class="mdui-valign">
           <div>
             Mar 22, 2017
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+
+    
+      
+
+
+  <div class="theme-posts__post">
+    <article class="mdui-card mdui-hoverable">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/5.png)">
+        
+        <div class="mdui-card-media-covered theme-posts__post__media-covered">
+          <div class="mdui-card-primary mdui-typo">
+            
+              <a href="/posts/main-theme-changing/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              
+                实现主站静态主题更换后，Android手机状态栏随同变色功能
+            </a>
+          </div>
+        </div>
+        
+      </section>
+      <section class="mdui-card-content">
+        主页都不知道给我换了多少次了，用不上了嗯。
+
+
+      </section>
+      <div class="mdui-divider" style="margin: 0 16px;"></div>
+      <section class="theme-posts__post__footer">
+        
+          
+            
+              <a href="/categories/技术/" class="theme-link--no-style">
+                <div class="mdui-chip theme-posts__post__footer__categories">
+                  <span class="mdui-chip-icon">
+                    <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
+                  </span>
+                  <span class="mdui-chip-title">技术</span>
+                </div>
+              </a>
+            
+          
+        
+        
+          
+            
+              <a href="/tags/Android/" class="theme-link--no-style">
+                <div class="mdui-chip theme-posts__post__footer__tags">
+                  <span class="mdui-chip-icon">
+                    <i class="mdui-icon fa fa-tags mdui-text-center"></i>
+                  </span>
+                  <span class="mdui-chip-title">Android</span>
+                </div>
+              </a>
+            
+          
+        
+        <div class="theme-spacer"></div>
+        <div class="mdui-valign">
+          <div>
+            Dec 31, 2016
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+
+    
+      
+
+
+  <div class="theme-posts__post">
+    <article class="mdui-card mdui-hoverable">
+        <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/34.png)">
+        
+        <div class="mdui-card-media-covered theme-posts__post__media-covered">
+          <div class="mdui-card-primary mdui-typo">
+            
+              <a href="/posts/add-gallery/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+            
+              
+                为Hexo的Material主题添加总图库以及分图库功能
+            </a>
+          </div>
+        </div>
+        
+      </section>
+      <section class="mdui-card-content">
+        嗯现在博客换了主题这个用不上了惹。
+
+
+      </section>
+      <div class="mdui-divider" style="margin: 0 16px;"></div>
+      <section class="theme-posts__post__footer">
+        
+        
+        <div class="theme-spacer"></div>
+        <div class="mdui-valign">
+          <div>
+            Dec 30, 2016
           </div>
         </div>
       </section>
@@ -1054,7 +1167,7 @@
     
       <div class="theme-end-footer">
         <div class="mdui-text-center mdui-text-color-theme-text">
-          1 of 2
+          1 of 3
         </div>
       </div>
     
@@ -1091,7 +1204,7 @@
   })();
 
   (function() {
-    var pageTotal = 2
+    var pageTotal = 3
     var pageNext = 2
     var pageLoad = false
     themeRuntime.temp = {
@@ -1193,6 +1306,42 @@
     appbarShadow()
     window.addEventListener('scroll', appbarShadow);
   })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
 </script>
 
 
@@ -1205,10 +1354,6 @@
 </script>
 
 
-  <script type="text/javascript">
-    mdui.alert("This site and its content are for demo only! If the site reloaded, you will see this alert again.", "Demo Alert", function(){},{history:false})
-    console.warn("This site is for demo only!")
-  </script>
 
 
 </body>

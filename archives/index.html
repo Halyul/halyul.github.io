@@ -4,7 +4,7 @@
 
 
 
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <script>
     window.themeRuntime = {
       root: "/",
@@ -16,7 +16,7 @@
         status: false
       },
       versions: {
-        theme: "2.0.3",
+        theme: "2.1.0",
         mdui: "0.4.0",
         fetch: "3.0.0",
         es6promise: "4.2.5+7f2b526d",
@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>Archives - Halyul的博客</title>
+  <title>Archives - Demo Blog</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -53,7 +53,7 @@
   <meta name="keywords" content="blog, hexo, mdui">
 
   <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="Halyul的博客">
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -63,9 +63,9 @@
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- The Open Graph protocol -->
-  <meta property="og:url" content="https://blog.halyul.com">
+  <meta property="og:url" content="https://halyul.github.io">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Archives - Halyul的博客 | Halyul的博客">
+  <meta property="og:title" content="Archives - Demo Blog | Demo Blog">
   <meta property="og:image" content="/images/favicon.png">
   
     <meta property="og:description" content="Never do a dreamer.">
@@ -231,9 +231,14 @@
         </i>
       </a>
     
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
   </div>
   <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
     
       <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
         <i class="mdui-icon material-icons">&#xe8b6;</i>
@@ -259,11 +264,11 @@
       
     </div>
     <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">Halyul的博客</span>
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
     </div>
   </div>
   <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
     <div class="theme-drawer__header__layer-2__user__info">
       <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
         Halyul
@@ -287,7 +292,7 @@
       <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
       <div class="mdui-list-item-content">Archives</div>
     </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
@@ -297,34 +302,52 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
               <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 杂
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 技术
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
               </a>
             
               <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Document
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
           </div>
@@ -342,31 +365,49 @@
               <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Hexo
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
               </a>
             
               <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xxx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 xx
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 Android
                 <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
                 <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
               </a>
             
               <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
                 教程
                 <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
               </a>
             
           </div>
@@ -397,13 +438,21 @@
               2016
             </a>
           
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+            <a href="/archives/1970/" class="mdui-list-item mdui-ripple">
+              1970
+            </a>
+          
         </div>
       </div>
     </ul>
   </ul>
   
     <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
       
         
           
@@ -482,19 +531,19 @@
     <div class="theme-drawer__warpper__footer">
   <div class="mdui-typo mdui-typo-caption-opacity">
     Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
+    <br />
     Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
+    <br />
     <span>
       Copyright ©
-      <span year=""></span>
+      <span year></span>
       Halyul
     </span>
     
     
-      <br>
+      <br />
       <span>
-        Last Updated: Jan 12, 2019
+        Last Updated: May 22, 2020
       </span>
     
     
@@ -523,10 +572,10 @@
   <div class="theme-archive__index">
     <div class="theme-archive__header">
       <div class="theme-archive__header__bg">
-        <img class="mdui-img-fluid mdui-img-rounded" src="/images/bg.png">
+        <img class="mdui-img-fluid mdui-img-rounded" src="/images/bg.png"/>
       </div>
       <div class="theme-archive__header__content" style="background-color:#eeeeee">
-        <img class="mdui-img-circle theme-archive__header__avatar" src="/images/avatar.png">
+        <img class="mdui-img-circle theme-archive__header__avatar" src="/images/avatar.png"/>
         <div class="theme-archive__header__info">
           <div class="theme-archive__header__name">
             Halyul
@@ -549,15 +598,69 @@
         
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
-            <a href="/categories/杂/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-pink">
-                <div class="mdui-card-media" style="background-image: url(/images/random/38.png)"></div>
+            <a href="/categories/Foo/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-red">
+                <div class="mdui-card-media" style="background-image: url(/images/random/11.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Foo</div>
+                  <div class="theme-archive__items__length">
+                    
+                      1 Post
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/categories/杂/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-lime">
+                <div class="mdui-card-media" style="background-image: url(/images/random/4.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">杂</div>
                   <div class="theme-archive__items__length">
                     
-                      4 Post
+                      2 Post
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/categories/Foo/Bar/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-indigo">
+                <div class="mdui-card-media" style="background-image: url(/images/random/16.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Bar</div>
+                  <div class="theme-archive__items__length">
+                    
+                      1 Post
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/categories/Foo/Bar/Baz/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-light-green">
+                <div class="mdui-card-media" style="background-image: url(/images/random/17.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Baz</div>
+                  <div class="theme-archive__items__length">
+                    
+                      1 Post
                     
                   </div>
                 </div>
@@ -568,14 +671,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/技术/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-grey">
-                <div class="mdui-card-media" style="background-image: url(/images/random/42.png)"></div>
+              <div class="mdui-card mdui-color-pink">
+                <div class="mdui-card-media" style="background-image: url(/images/random/27.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">技术</div>
                   <div class="theme-archive__items__length">
                     
-                      6 Post
+                      3 Post
                     
                   </div>
                 </div>
@@ -586,14 +689,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/Document/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-lime">
-                <div class="mdui-card-media" style="background-image: url(/images/random/32.png)"></div>
+              <div class="mdui-card mdui-color-pink">
+                <div class="mdui-card-media" style="background-image: url(/images/random/20.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">Document</div>
                   <div class="theme-archive__items__length">
                     
-                      2 Post
+                      1 Post
                     
                   </div>
                 </div>
@@ -604,14 +707,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/Document/xxx/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-red">
-                <div class="mdui-card-media" style="background-image: url(/images/random/43.png)"></div>
+              <div class="mdui-card mdui-color-light-green">
+                <div class="mdui-card-media" style="background-image: url(/images/random/12.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">xxx</div>
                   <div class="theme-archive__items__length">
                     
-                      2 Post
+                      1 Post
                     
                   </div>
                 </div>
@@ -622,14 +725,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/Document/xxx/xx/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-lime">
+              <div class="mdui-card mdui-color-yellow">
                 <div class="mdui-card-media" style="background-image: url(/images/random/34.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">xx</div>
                   <div class="theme-archive__items__length">
                     
-                      2 Post
+                      1 Post
                     
                   </div>
                 </div>
@@ -648,14 +751,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/Hexo/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-amber">
-                <div class="mdui-card-media" style="background-image: url(/images/random/43.png)"></div>
+              <div class="mdui-card mdui-color-teal">
+                <div class="mdui-card-media" style="background-image: url(/images/random/21.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">Hexo</div>
                   <div class="theme-archive__items__length">
                     
-                      8 Posts
+                      4 Posts
                     
                   </div>
                 </div>
@@ -666,14 +769,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/xxx/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-pink">
-                <div class="mdui-card-media" style="background-image: url(/images/random/24.png)"></div>
+              <div class="mdui-card mdui-color-light-blue">
+                <div class="mdui-card-media" style="background-image: url(/images/random/7.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">xxx</div>
                   <div class="theme-archive__items__length">
                     
-                      2 Posts
+                      1 Post
                     
                   </div>
                 </div>
@@ -684,14 +787,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/xx/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-brown">
-                <div class="mdui-card-media" style="background-image: url(/images/random/28.png)"></div>
+              <div class="mdui-card mdui-color-yellow">
+                <div class="mdui-card-media" style="background-image: url(/images/random/36.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">xx</div>
                   <div class="theme-archive__items__length">
                     
-                      2 Posts
+                      1 Post
                     
                   </div>
                 </div>
@@ -702,11 +805,29 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/Android/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-orange">
-                <div class="mdui-card-media" style="background-image: url(/images/random/15.png)"></div>
+              <div class="mdui-card mdui-color-lime">
+                <div class="mdui-card-media" style="background-image: url(/images/random/17.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">Android</div>
+                  <div class="theme-archive__items__length">
+                    
+                      1 Post
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/tags/Foo/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-lime">
+                <div class="mdui-card-media" style="background-image: url(/images/random/31.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Foo</div>
                   <div class="theme-archive__items__length">
                     
                       2 Posts
@@ -719,15 +840,51 @@
         
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
-            <a href="/tags/教程/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-purple">
-                <div class="mdui-card-media" style="background-image: url(/images/random/20.png)"></div>
+            <a href="/tags/Bar/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-light-blue">
+                <div class="mdui-card-media" style="background-image: url(/images/random/34.png)"></div>
                 <div class="theme-archive__items__content">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Bar</div>
+                  <div class="theme-archive__items__length">
+                    
+                      2 Posts
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/tags/Baz/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-cyan">
+                <div class="mdui-card-media" style="background-image: url(/images/random/44.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">Baz</div>
+                  <div class="theme-archive__items__length">
+                    
+                      1 Post
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/tags/教程/" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-light-blue">
+                <div class="mdui-card-media" style="background-image: url(/images/random/16.png)"></div>
+                <div class="theme-archive__items__content">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">教程</div>
                   <div class="theme-archive__items__length">
                     
-                      4 Posts
+                      2 Posts
                     
                   </div>
                 </div>
@@ -746,10 +903,10 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/archives/2019" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-indigo">
-                <div class="mdui-card-media" style="background-image: url(/images/random/13.png)"></div>
+              <div class="mdui-card mdui-color-blue">
+                <div class="mdui-card-media" style="background-image: url(/images/random/6.png)"></div>
                 <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">2019</div>
                 </div>
               </div>
@@ -759,10 +916,10 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/archives/2018" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-lime">
-                <div class="mdui-card-media" style="background-image: url(/images/random/21.png)"></div>
+              <div class="mdui-card mdui-color-cyan">
+                <div class="mdui-card-media" style="background-image: url(/images/random/40.png)"></div>
                 <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">2018</div>
                 </div>
               </div>
@@ -772,10 +929,10 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/archives/2017" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-brown">
-                <div class="mdui-card-media" style="background-image: url(/images/random/22.png)"></div>
+              <div class="mdui-card mdui-color-indigo">
+                <div class="mdui-card-media" style="background-image: url(/images/random/17.png)"></div>
                 <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">2017</div>
                 </div>
               </div>
@@ -785,11 +942,37 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/archives/2016" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-indigo">
-                <div class="mdui-card-media" style="background-image: url(/images/random/2.png)"></div>
+              <div class="mdui-card mdui-color-deep-orange">
+                <div class="mdui-card-media" style="background-image: url(/images/random/21.png)"></div>
                 <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
                   <div class="theme-archive__items__text-title">2016</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/archives/2013" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-pink">
+                <div class="mdui-card-media" style="background-image: url(/images/random/32.png)"></div>
+                <div class="theme-archive__items__content theme-archive__items__content--no-length">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">2013</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
+            <a href="/archives/1969" target="_self" class="theme-link--no-style">
+              <div class="mdui-card mdui-color-blue-grey">
+                <div class="mdui-card-media" style="background-image: url(/images/random/44.png)"></div>
+                <div class="theme-archive__items__content theme-archive__items__content--no-length">
+                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
+                  <div class="theme-archive__items__text-title">1969</div>
                 </div>
               </div>
             </a>
@@ -827,7 +1010,7 @@
         </div>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple" mdui-dialog-close="">
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>
           Close
         </button>
       </div>
@@ -925,6 +1108,42 @@
     appbarShadow()
     window.addEventListener('scroll', appbarShadow);
   })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
 </script>
 
 
@@ -937,10 +1156,6 @@
 </script>
 
 
-  <script type="text/javascript">
-    mdui.alert("This site and its content are for demo only! If the site reloaded, you will see this alert again.", "Demo Alert", function(){},{history:false})
-    console.warn("This site is for demo only!")
-  </script>
 
 
 </body>

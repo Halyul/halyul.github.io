@@ -1,0 +1,1334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.1.0",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>Markdown Style test - Demo Blog</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="Halyul">
+  
+      <meta name="description" content="This post is originated from here and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.">
+  
+  <meta name="keywords" content="blog, hexo, mdui,Foo,Bar">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Demo Blog">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="https://halyul.github.io">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Markdown Style test - Demo Blog | Demo Blog">
+  <meta property="og:image" content="/images/favicon.png">
+  
+    <meta property="og:description" content="This post is originated from here and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.">
+  
+
+  
+    <meta property="og:article:tag" content="Foo">
+  
+    <meta property="og:article:tag" content="Bar">
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__mode-switch">
+      <i class="mdui-icon material-icons  theme-appbar__bright-mode">&#xe1ac;</i>
+      <i class="mdui-icon material-icons  theme-appbar__dark-mode" style="display: none;">&#xe3a7;</i>
+    </a>
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">Demo Blog</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">Demo Blog</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png"/>
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        Halyul
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        I&#39;m your slogan!
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">Index</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+      <div class="mdui-list-item-content">Archives</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
+            <div class="mdui-list-item-content">Categories</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/杂/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                杂
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/技术/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/categories/Document/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Document
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Foo/Bar/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Document/xxx/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">Tags</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/xxx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xxx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/xx/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                xx
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/教程/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                教程
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Foo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Foo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Bar/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Bar
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Baz/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Baz
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">Years</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2020/" class="mdui-list-item mdui-ripple">
+              2020
+            </a>
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+            <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
+              2018
+            </a>
+          
+            <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+              2017
+            </a>
+          
+            <a href="/archives/2016/" class="mdui-list-item mdui-ripple">
+              2016
+            </a>
+          
+            <a href="/archives/2013/" class="mdui-list-item mdui-ripple">
+              2013
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
+      
+        
+          
+            <a href="/friends" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
+              
+              
+              <div class="mdui-list-item-content">Test1</div>
+            </a>
+        
+      
+        
+          
+            <a href="/apply-for-link" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
+              
+              
+              
+              <div class="mdui-list-item-content">Test2</div>
+            </a>
+        
+      
+        
+          
+            <a href="/galleries" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test3</div>
+            </a>
+        
+      
+        
+          <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              
+              
+              <div class="mdui-list-item-content">Test4</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              
+                
+                  <a href="/myfriends" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST1
+                  </a>
+              
+                
+                  <a href="/timeline" class="mdui-list-item mdui-ripple mdui-ripple-white" target="_self">
+                
+                    TEST2
+                  </a>
+              
+            </div>
+          </div>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br />
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br />
+    <span>
+      Copyright ©
+      <span year></span>
+      Halyul
+    </span>
+    
+    
+      <br />
+      <span>
+        Last Updated: May 22, 2020
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      Markdown Style test
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>Posted: </span>
+        <span style="float: right">Jul 24, 2018</span>
+        
+        <br>
+          <span>Last Modified: </span>
+          <span>Oct 19, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        Article QR Code
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbUlEQVR42u3aQVLDMBAEwPz/03ClCkxmVrZsqNaJIsFR5yAts/v6+NfrhYeHh4eHh4eH9zDeK15f3//DQ399/9Gr35+wsjc8PDy8nbw3R+3Bdo9ezZ9zhJntDQ8PD28/L78M1jeRPG24Nzw8PLyH8fIDvS2g8wsJDw8P72/xfo8h2q3nVw4eHh7eM3krBXH+nvzCuCFrwcPDw4t5swbYnp9v6+/h4eHhHfDalRzW+VhAe8FEn4WHh4d3MS8ZC0iK4LakToKMJKoYZi14eHh4p/LyAKK9Et6UwqPWGh4eHt5+XvJns20l10YefySXCh4eHt5+3qzx30bA+TjscCgBDw8P72Jecui3RW0e3bZ7wMPDw3sO76wWVD5+OvtNckng4eHhXc1rj+zZ5TGLg/P4Aw8PD+8JvKS0zWOFtkTOv0o8PDy8/bxkoyvjBe1Q16wJh4eHh3cXLy9kV0KEtoVW7xMPDw9vC28WLszK7rMK9zqlxsPDwzuJV/+rH0er67DZ8/Hw8PD28NrSdtbab8vuZLgBDw8Pbz+vDXDz4zsPOGYjAnh4eHh38ZLH5YFFcqznX1YbjuDh4eHt5LUR7VlXy/oQAx4eHt5+Xjs0sB4irI8RvCmy8fDw8C7mtSv/yDwIzhtmUTyBh4eHdzFvZWx0ZTCrLeuX7j08PDy8C3h5kymPBtrhrfxiKGJcPDw8vIt5bRG81OAfreiLwMPDw3sYLw9k2/Z/O3xw+Bs8PDy8B/NmzbC82ZY35PDw8PDu4rUFcR5PtEFD2xjDw8PD289bCQJmR/xK5FFfDHh4eHin8v7fwsPDw8PDw8PDe8D6BL21ct5kXBTzAAAAAElFTkSuQmCC" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://halyul.github.io//posts/markdown/index.html" target="_blank" class="mdui-ripple">
+                Share to Facebook
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=https://halyul.github.io//posts/markdown/index.html" target="_blank" class="mdui-ripple">
+                Share to Google+
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://halyul.github.io//posts/markdown/index.html&title=Markdown Style test" target="_blank" class="mdui-ripple">
+                Share to Linkedin
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Markdown Style test&url=https://halyul.github.io//posts/markdown/index.html&via=Halyul" target="_blank" class="mdui-ripple">
+                Share to Twitter
+            </a>
+        </li>
+      
+
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/27.png"/>
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p>This post is originated from <a href="https://gist.github.com/apackeer/4159268" target="_blank" rel="noopener">here</a> and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> H1</span>
+<span class="token title important"><span class="token punctuation">##</span> H2</span>
+<span class="token title important"><span class="token punctuation">###</span> H3</span>
+<span class="token title important"><span class="token punctuation">####</span> H4</span>
+<span class="token title important"><span class="token punctuation">#####</span> H5</span>
+<span class="token title important"><span class="token punctuation">######</span> H6</span>
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+<span class="token title important">Alt-H1
+<span class="token punctuation">======</span></span>
+
+<span class="token title important">Alt-H2
+<span class="token punctuation">------</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">Emphasis, aka italics, with <span class="token italic"><span class="token punctuation">*</span>asterisks<span class="token punctuation">*</span></span> or <span class="token italic"><span class="token punctuation">_</span>underscores<span class="token punctuation">_</span></span>.
+
+Strong emphasis, aka bold, with <span class="token bold"><span class="token punctuation">**</span>asterisks<span class="token punctuation">**</span></span> or <span class="token bold"><span class="token punctuation">__</span>underscores<span class="token punctuation">__</span></span>.
+
+Combined emphasis with <span class="token bold"><span class="token punctuation">**</span>asterisks and <span class="token italic"><span class="token punctuation">_</span>underscores<span class="token punctuation">_</span></span><span class="token punctuation">**</span></span>.
+
+Strikethrough uses two tildes. ~~Scratch this.~~<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token list punctuation">1.</span> First ordered list item
+<span class="token list punctuation">2.</span> Another item
+  <span class="token list punctuation">*</span> Unordered sub-list.
+<span class="token list punctuation">1.</span> Actual numbers don't matter, just that it's a number
+  <span class="token list punctuation">1.</span> Ordered sub-list
+<span class="token list punctuation">4.</span> And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+<span class="token list punctuation">*</span> Unordered list can use asterisks
+<span class="token list punctuation">-</span> Or minuses
+<span class="token list punctuation">+</span> Or pluses
+<span class="token list punctuation">-</span> Paragraph In unordered list
+
+  For example like this.
+
+Common Paragraph with some text.
+And more text.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ol>
+<li><p>First ordered list item</p>
+</li>
+<li><p>Another item</p>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+</li>
+<li><p>Actual numbers don’t matter, just that it’s a number</p>
+<ol>
+<li>Ordered sub-list</li>
+</ol>
+</li>
+<li><p>And another item.</p>
+<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we’ll use three here to also align the raw Markdown).</p>
+<p>To have a line break without a paragraph, you will need to use two trailing spaces.<br>Note that this line is separate, but within the same paragraph.<br>(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<ul>
+<li><p>Paragraph In unordered list</p>
+<p>For example like this.</p>
+</li>
+</ul>
+<p>Common Paragraph with some text.<br>And more text.</p>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>To reboot your computer, press <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>ctrl<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>alt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>del<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
+
+
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
+<span class="token code keyword">    &lt;dt>Definition list&lt;/dt></span>
+<span class="token code keyword">    &lt;dd>Is something people use sometimes.&lt;/dd></span>
+
+<span class="token code keyword">    &lt;dt>Markdown in HTML&lt;/dt></span>
+<span class="token code keyword">    &lt;dd>Does *not* work **very** well. Use HTML &lt;em>tags&lt;/em>.&lt;/dd></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<dl>
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+<pre><code>&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</code></pre></dl>
+
+
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token url">[I'm an inline-style link](https://www.google.com)</span>
+
+<span class="token url">[I'm an inline-style link with title](https://www.google.com <span class="token string">"Google's Homepage"</span>)</span>
+
+<span class="token url">[I'm a reference-style link][<span class="token variable">Arbitrary case-insensitive reference text</span>]</span>
+
+<span class="token url">[I'm a relative reference to a repository file](../blob/master/LICENSE)</span>
+
+<span class="token url">[You can use numbers for reference-style link definitions][<span class="token variable">1</span>]</span>
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">arbitrary case-insensitive reference text</span><span class="token punctuation">]</span><span class="token punctuation">:</span> https://hexo.io</span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> https://hexo.io/docs/</span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">link text itself</span><span class="token punctuation">]</span><span class="token punctuation">:</span> https://hexo.io/api/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><a href="https://www.google.com" target="_blank" rel="noopener">I’m an inline-style link</a></p>
+<p><a href="https://www.google.com" title="Google&#39;s Homepage" target="_blank" rel="noopener">I’m an inline-style link with title</a></p>
+<p><a href="https://hexo.io" target="_blank" rel="noopener">I’m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
+<p><a href="https://hexo.io/docs/" target="_blank" rel="noopener">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="https://hexo.io/api/" target="_blank" rel="noopener">link text itself</a></p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">hover to see the title text:
+
+Inline-style:
+
+<span class="token url">![alt text](https://hexo.io/icon/favicon-196x196.png <span class="token string">"Logo Title Text 1"</span>)</span>
+
+Reference-style:
+<span class="token url">![alt text][<span class="token variable">logo</span>]</span>
+
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">logo</span><span class="token punctuation">]</span><span class="token punctuation">:</span> https://hexo.io/icon/favicon-196x196.png <span class="token string">"Logo Title Text 2"</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>hover to see the title text:</p>
+<p>Inline-style:</p>
+<p><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:<br><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2"></p>
+<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<pre class="line-numbers language-javascript" mdui-tooltip="{content: 'javascript'}"><code class="language-javascript"><span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">"JavaScript syntax highlighting"</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" mdui-tooltip="{content: 'python'}"><code class="language-python">s <span class="token operator">=</span> <span class="token string">"Python syntax highlighting"</span>
+<span class="token keyword">print</span> s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code>No language indicated, so no syntax highlighting.
+But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</code></pre><h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|<span class="token code keyword">`'Isn't this fun?'`</span>            |'Isn't this fun?'            |
+|Quotes          |<span class="token code keyword">`"Isn't this fun?"`</span>            |"Isn't this fun?"            |
+|Dashes          |<span class="token code keyword">`-- is en-dash, --- is em-dash`</span>|-- is en-dash, --- is em-dash|<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single backticks</td>
+<td><code>&#39;Isn&#39;t this fun?&#39;</code></td>
+<td>‘Isn’t this fun?’</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>&quot;Isn&#39;t this fun?&quot;</code></td>
+<td>“Isn’t this fun?”</td>
+</tr>
+<tr>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>– is en-dash, — is em-dash</td>
+</tr>
+</tbody></table></div>
+<p>Colons can be used to align columns.</p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned |  |
+| col 2 is      | centered      |    |
+| zebra stripes | are neat      |   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right"></td>
+</tr>
+</tbody></table></div>
+<p>The outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token title important">Markdown | Less | Pretty
+<span class="token punctuation">---</span></span> | --- | ---
+<span class="token italic"><span class="token punctuation">*</span>Still<span class="token punctuation">*</span></span> | <span class="token code keyword">`renders`</span> | <span class="token bold"><span class="token punctuation">**</span>nicely<span class="token punctuation">**</span></span>
+1 | 2 | 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">here</a>.</p>
+</blockquote>
+<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><p>Three or more…</p>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown"><span class="token hr punctuation">---</span>
+
+Hyphens
+
+<span class="token hr punctuation">***</span>
+
+Asterisks
+
+<span class="token italic"><span class="token punctuation">_</span><span class="token punctuation">_</span><span class="token punctuation">_</span></span>
+
+Underscores<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a <span class="token italic"><span class="token punctuation">*</span>separate paragraph<span class="token punctuation">*</span></span>.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the <span class="token italic"><span class="token punctuation">*</span>same paragraph<span class="token punctuation">*</span></span>.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Here’s a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also a separate paragraph, but…<br>This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+<hr>
+<pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">This is a regular paragraph.
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+<span class="token code keyword">    &lt;tr></span>
+<span class="token code keyword">        &lt;td>Foo&lt;/td></span>
+<span class="token code keyword">    &lt;/tr></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+
+This is another regular paragraph.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>This is a regular paragraph.</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table></div>
+
+<p>This is another regular paragraph.</p>
+<h2 id="Youtube-videos"><a href="#Youtube-videos" class="headerlink" title="Youtube videos"></a>Youtube videos</h2><pre class="line-numbers language-markdown" mdui-tooltip="{content: 'markdown'}"><code class="language-markdown">&lt;a href="https://www.youtube.com/watch?feature=player<span class="token italic"><span class="token punctuation">_</span>embedded&amp;v=ARted4RniaU
+" target="<span class="token punctuation">_</span></span>blank"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://img.youtube.com/vi/ARted4RniaU/0.jpg<span class="token punctuation">"</span></span>
+<span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IMAGE ALT TEXT HERE<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>240<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>180<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+
+Pure markdown version:
+
+<span class="token url">[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)</span>](https://www.youtube.com/watch?v=ARted4RniaU)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+" target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10"></a></p>
+<p>Pure markdown version:</p>
+<p><a href="https://www.youtube.com/watch?v=ARted4RniaU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              Article License: 
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="https://halyul.github.io/posts/markdown/">https://halyul.github.io/posts/markdown/</a></span>
+            
+              <br />
+              <span>Article Markdown: <a href="https://halyul.github.io/posts/markdown/markdown.md">https://halyul.github.io/posts/markdown/markdown.md</a></span>
+            
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/tags/Foo/">
+                    <span>Foo</span>
+                  </a>
+                
+                  <a href="/tags/Bar/">
+                    <span>Bar</span>
+                  </a>
+                
+              </div>
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Headers" data-href="#Headers"><span class="toc-number"></span> <span class="toc-text">1. Headers</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H1" data-href="#H1"><span class="toc-number"></span> <span class="toc-text"> H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H2" data-href="#H2"><span class="toc-number"></span> <span class="toc-text">1. H2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H3" data-href="#H3"><span class="toc-number"></span> <span class="toc-text">1.1. H3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H4" data-href="#H4"><span class="toc-number"></span> <span class="toc-text">1.1.1. H4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H5" data-href="#H5"><span class="toc-number"></span> <span class="toc-text">1.1.1.1. H5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H6" data-href="#H6"><span class="toc-number"></span> <span class="toc-text">1.1.1.1.1. H6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Alt-H1" data-href="#Alt-H1"><span class="toc-number"></span> <span class="toc-text"> Alt-H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Alt-H2" data-href="#Alt-H2"><span class="toc-number"></span> <span class="toc-text">1. Alt-H2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Emphasis" data-href="#Emphasis"><span class="toc-number"></span> <span class="toc-text">2. Emphasis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Lists" data-href="#Lists"><span class="toc-number"></span> <span class="toc-text">3. Lists</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Inline-HTML" data-href="#Inline-HTML"><span class="toc-number"></span> <span class="toc-text">4. Inline HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Links" data-href="#Links"><span class="toc-number"></span> <span class="toc-text">5. Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Images" data-href="#Images"><span class="toc-number"></span> <span class="toc-text">6. Images</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Code-and-Syntax-Highlighting" data-href="#Code-and-Syntax-Highlighting"><span class="toc-number"></span> <span class="toc-text">7. Code and Syntax Highlighting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Tables" data-href="#Tables"><span class="toc-number"></span> <span class="toc-text">8. Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Blockquotes" data-href="#Blockquotes"><span class="toc-number"></span> <span class="toc-text">9. Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Horizontal-Rule" data-href="#Horizontal-Rule"><span class="toc-number"></span> <span class="toc-text">10. Horizontal Rule</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Line-Breaks" data-href="#Line-Breaks"><span class="toc-number"></span> <span class="toc-text">11. Line Breaks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Youtube-videos" data-href="#Youtube-videos"><span class="toc-number"></span> <span class="toc-text">12. Youtube videos</span></a></li></ol></li>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Headers" data-href="#Headers"><span class="toc-number"></span> <span class="toc-text">1. Headers</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H1" data-href="#H1"><span class="toc-number"></span> <span class="toc-text"> H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H2" data-href="#H2"><span class="toc-number"></span> <span class="toc-text">1. H2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H3" data-href="#H3"><span class="toc-number"></span> <span class="toc-text">1.1. H3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H4" data-href="#H4"><span class="toc-number"></span> <span class="toc-text">1.1.1. H4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H5" data-href="#H5"><span class="toc-number"></span> <span class="toc-text">1.1.1.1. H5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#H6" data-href="#H6"><span class="toc-number"></span> <span class="toc-text">1.1.1.1.1. H6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Alt-H1" data-href="#Alt-H1"><span class="toc-number"></span> <span class="toc-text"> Alt-H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Alt-H2" data-href="#Alt-H2"><span class="toc-number"></span> <span class="toc-text">1. Alt-H2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Emphasis" data-href="#Emphasis"><span class="toc-number"></span> <span class="toc-text">2. Emphasis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Lists" data-href="#Lists"><span class="toc-number"></span> <span class="toc-text">3. Lists</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Inline-HTML" data-href="#Inline-HTML"><span class="toc-number"></span> <span class="toc-text">4. Inline HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Links" data-href="#Links"><span class="toc-number"></span> <span class="toc-text">5. Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Images" data-href="#Images"><span class="toc-number"></span> <span class="toc-text">6. Images</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Code-and-Syntax-Highlighting" data-href="#Code-and-Syntax-Highlighting"><span class="toc-number"></span> <span class="toc-text">7. Code and Syntax Highlighting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Tables" data-href="#Tables"><span class="toc-number"></span> <span class="toc-text">8. Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Blockquotes" data-href="#Blockquotes"><span class="toc-number"></span> <span class="toc-text">9. Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Horizontal-Rule" data-href="#Horizontal-Rule"><span class="toc-number"></span> <span class="toc-text">10. Horizontal Rule</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Line-Breaks" data-href="#Line-Breaks"><span class="toc-number"></span> <span class="toc-text">11. Line Breaks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#Youtube-videos" data-href="#Youtube-videos"><span class="toc-number"></span> <span class="toc-text">12. Youtube videos</span></a></li></ol></li>
+  </ul>
+</div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
+      
+        <a href="/posts/code-highlight/" class="theme-post__pagination__prev__content mdui-text-left">
+        
+        <div>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          Code Highlight Style test
+        </div>
+      </a>
+    </div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      
+        <a href="/posts/table/" class="theme-post__pagination__next__content mdui-text-right">
+        
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Older Post</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          table
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">Buy me a beer?</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1571483049000
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>Halyul</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+  (function() {
+    function detechTheme() {
+      var modeFlag = localStorage.getItem('darkMode');
+      // true for dark mode, false for bright mode
+      if(modeFlag){
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+        return true
+      } else if(!window.matchMedia) {
+          return false;
+      } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.querySelector('body').classList.add('mdui-theme-layout-dark')
+          return true;
+      } else if(window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark')
+          return false;
+      } else {
+        return false;
+      }
+    }
+    var modeFlag = detechTheme();
+    var modeEl = document.querySelector('.theme-appbar__mode-switch');
+    function modeSwitch() {
+      if (!modeFlag) {
+        // default bright mode, switch to dark mode
+        document.querySelector('body').classList.add('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', true);
+        modeFlag = true;
+      } else {
+        // dark mode, switch to bright mode
+        document.querySelector('body').classList.remove('mdui-theme-layout-dark');
+        localStorage.setItem('darkMode', false);
+        modeFlag = false;
+      }
+    }
+    modeEl.addEventListener('click', modeSwitch);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+
+
+</body>
+</html>
